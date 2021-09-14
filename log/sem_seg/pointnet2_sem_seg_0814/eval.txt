@@ -1,0 +1,66 @@
+2021-09-05 01:16:34,962 - Model - INFO - PARAMETER ...
+2021-09-05 01:16:34,962 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Validation', visual=True)
+2021-09-05 01:16:34,962 - Model - INFO - The number of test data is: 0
+2021-09-05 01:16:38,286 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 01:20:01,173 - Model - INFO - PARAMETER ...
+2021-09-05 01:20:01,173 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Validation', visual=True)
+2021-09-05 01:20:01,173 - Model - INFO - The number of test data is: 0
+2021-09-05 01:20:04,042 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 01:21:02,938 - Model - INFO - PARAMETER ...
+2021-09-05 01:21:02,939 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Validation', visual=True)
+2021-09-05 01:21:02,939 - Model - INFO - The number of test data is: 0
+2021-09-05 01:21:05,825 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 01:22:08,676 - Model - INFO - PARAMETER ...
+2021-09-05 01:22:08,677 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 01:22:09,223 - Model - INFO - The number of test data is: 8
+2021-09-05 01:22:12,266 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 02:02:59,309 - Model - INFO - PARAMETER ...
+2021-09-05 02:02:59,309 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 02:02:59,845 - Model - INFO - The number of test data is: 8
+2021-09-05 02:03:03,045 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 02:04:12,358 - Model - INFO - PARAMETER ...
+2021-09-05 02:04:12,358 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 02:04:12,907 - Model - INFO - The number of test data is: 8
+2021-09-05 02:04:16,081 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 02:20:17,183 - Model - INFO - PARAMETER ...
+2021-09-05 02:20:17,183 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 02:20:17,734 - Model - INFO - The number of test data is: 8
+2021-09-05 02:20:21,161 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 02:23:29,393 - Model - INFO - PARAMETER ...
+2021-09-05 02:23:29,393 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 02:23:29,875 - Model - INFO - The number of test data is: 8
+2021-09-05 02:23:33,189 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 02:24:17,511 - Model - INFO - PARAMETER ...
+2021-09-05 02:24:17,511 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 02:24:18,073 - Model - INFO - The number of test data is: 8
+2021-09-05 02:24:21,227 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 03:52:29,949 - Model - INFO - PARAMETER ...
+2021-09-05 03:52:29,949 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 03:52:30,506 - Model - INFO - The number of test data is: 8
+2021-09-05 03:52:33,711 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 03:57:35,140 - Model - INFO - PARAMETER ...
+2021-09-05 03:57:35,140 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 03:57:35,703 - Model - INFO - The number of test data is: 8
+2021-09-05 03:57:39,027 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 04:03:19,174 - Model - INFO - PARAMETER ...
+2021-09-05 04:03:19,175 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 04:03:19,713 - Model - INFO - The number of test data is: 8
+2021-09-05 04:03:23,004 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 18:25:10,799 - Model - INFO - PARAMETER ...
+2021-09-05 18:25:10,799 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set', test_area='Test', visual=True)
+2021-09-05 18:25:10,799 - Model - INFO - The number of test data is: 0
+2021-09-05 18:25:13,940 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-05 18:36:05,531 - Model - INFO - PARAMETER ...
+2021-09-05 18:36:05,531 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set', test_area='Test', visual=True)
+2021-09-05 18:42:29,050 - Model - INFO - PARAMETER ...
+2021-09-05 18:42:29,050 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-05 18:42:29,599 - Model - INFO - The number of test data is: 8
+2021-09-05 18:42:32,757 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-06 22:27:35,635 - Model - INFO - PARAMETER ...
+2021-09-06 22:27:35,636 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-06 22:27:36,276 - Model - INFO - The number of test data is: 8
+2021-09-06 22:27:40,162 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2021-09-07 02:25:06,915 - Model - INFO - PARAMETER ...
+2021-09-07 02:25:06,915 - Model - INFO - Namespace(batch_size=32, gpu='1', log_dir='pointnet2_sem_seg_0814', num_point=4096, root='/home/ies/hyu/Motor_seg_pipeline/data/Test_set/', test_area='Test', visual=True)
+2021-09-07 02:25:07,532 - Model - INFO - The number of test data is: 8
+2021-09-07 02:25:10,978 - Model - INFO - ---- EVALUATION WHOLE SCENE----

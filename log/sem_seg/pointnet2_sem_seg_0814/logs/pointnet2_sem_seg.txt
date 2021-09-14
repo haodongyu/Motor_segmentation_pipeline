@@ -1,0 +1,2448 @@
+2021-08-14 02:23:39,402 - Model - INFO - PARAMETER ...
+2021-08-14 02:23:39,402 - Model - INFO - Namespace(batch_size=32, bolt_weight=10.0, decay_rate=0.0001, epoch=100, gpu='0', learning_rate=0.001, log_dir='pointnet2_sem_seg_0814', lr_decay=0.7, model='pointnet2_sem_seg', npoint=4096, optimizer='Adam', root='/home/ies/hyu/data/Training_set_0814_noise/', step_size=10, test_area='Validation')
+2021-08-14 02:24:18,009 - Model - INFO - The weight of each class areL array([0.04927731, 0.08938079, 0.13257061, 0.20780788, 0.13177721,
+       0.38918617], dtype=float32)
+2021-08-14 02:24:18,010 - Model - INFO - The number of training data is: 41268
+2021-08-14 02:24:18,010 - Model - INFO - The number of test data is: 13159
+2021-08-14 02:24:18,119 - Model - INFO - No existing model, starting training from scratch...
+2021-08-14 02:24:18,150 - Model - INFO - **** Epoch 1 (1/100) ****
+2021-08-14 02:24:18,150 - Model - INFO - Learning rate:0.001000
+2021-08-14 02:35:10,833 - Model - INFO - PARAMETER ...
+2021-08-14 02:35:10,833 - Model - INFO - Namespace(batch_size=32, bolt_weight=10.0, decay_rate=0.0001, epoch=100, gpu='0', learning_rate=0.001, log_dir='pointnet2_sem_seg_0814', lr_decay=0.7, model='pointnet2_sem_seg', npoint=4096, optimizer='Adam', root='/home/ies/hyu/data/Training_set_0814_noise/', step_size=10, test_area='Validation')
+2021-08-14 02:35:43,979 - Model - INFO - The weight of each class areL array([0.04444545, 0.08061661, 0.11957147, 0.17157507, 0.11346623,
+       0.47032514], dtype=float32)
+2021-08-14 02:35:43,979 - Model - INFO - The number of training data is: 41268
+2021-08-14 02:35:43,979 - Model - INFO - The number of test data is: 13159
+2021-08-14 02:35:44,000 - Model - INFO - No existing model, starting training from scratch...
+2021-08-14 02:35:44,001 - Model - INFO - **** Epoch 1 (1/100) ****
+2021-08-14 02:35:44,002 - Model - INFO - Learning rate:0.001000
+2021-08-14 02:51:27,955 - Model - INFO - Training mean loss: 0.311321
+2021-08-14 02:51:27,956 - Model - INFO - Training accuracy: 0.941159
+2021-08-14 02:51:27,957 - Model - INFO - Save model...
+2021-08-14 02:51:27,957 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 02:51:28,020 - Model - INFO - Saving model....
+2021-08-14 02:51:28,583 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2021-08-14 02:56:24,314 - Model - INFO - eval mean loss: 0.163405
+2021-08-14 02:56:24,314 - Model - INFO - eval point avg class IoU: 0.721632
+2021-08-14 02:56:24,314 - Model - INFO - eval point accuracy: 0.967874
+2021-08-14 02:56:24,314 - Model - INFO - eval point avg class acc: 0.862290
+2021-08-14 02:56:24,315 - Model - INFO - eval point avg class IoU without background: 0.668332
+2021-08-14 02:56:24,315 - Model - INFO - eval point accuracy without background: 0.892876
+2021-08-14 02:56:24,315 - Model - INFO - eval point avg class acc without background: 0.836704
+2021-08-14 02:56:24,315 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.988 
+class cover          weight: 0.128, IoU: 0.876 
+class gearContainer  weight: 0.038, IoU: 0.691 
+class charger        weight: 0.012, IoU: 0.663 
+class bottom         weight: 0.045, IoU: 0.822 
+class bolt           weight: 0.006, IoU: 0.289 
+
+2021-08-14 02:56:24,316 - Model - INFO - Eval mean loss: 0.163405
+2021-08-14 02:56:24,316 - Model - INFO - Eval accuracy: 0.967874
+2021-08-14 02:56:24,316 - Model - INFO - Save model...
+2021-08-14 02:56:24,316 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 02:56:24,363 - Model - INFO - Saving model....
+2021-08-14 02:56:24,363 - Model - INFO - Best mIoU: 0.721632
+2021-08-14 02:56:24,364 - Model - INFO - **** Epoch 2 (2/100) ****
+2021-08-14 02:56:24,364 - Model - INFO - Learning rate:0.001000
+2021-08-14 03:12:03,058 - Model - INFO - Training mean loss: 0.119073
+2021-08-14 03:12:03,059 - Model - INFO - Training accuracy: 0.976697
+2021-08-14 03:12:03,627 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2021-08-14 03:16:47,679 - Model - INFO - eval mean loss: 0.091184
+2021-08-14 03:16:47,679 - Model - INFO - eval point avg class IoU: 0.825989
+2021-08-14 03:16:47,679 - Model - INFO - eval point accuracy: 0.983187
+2021-08-14 03:16:47,679 - Model - INFO - eval point avg class acc: 0.919519
+2021-08-14 03:16:47,680 - Model - INFO - eval point avg class IoU without background: 0.792572
+2021-08-14 03:16:47,680 - Model - INFO - eval point accuracy without background: 0.942549
+2021-08-14 03:16:47,680 - Model - INFO - eval point avg class acc without background: 0.904363
+2021-08-14 03:16:47,680 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.993 
+class cover          weight: 0.128, IoU: 0.930 
+class gearContainer  weight: 0.038, IoU: 0.833 
+class charger        weight: 0.012, IoU: 0.836 
+class bottom         weight: 0.045, IoU: 0.918 
+class bolt           weight: 0.006, IoU: 0.447 
+
+2021-08-14 03:16:47,681 - Model - INFO - Eval mean loss: 0.091184
+2021-08-14 03:16:47,681 - Model - INFO - Eval accuracy: 0.983187
+2021-08-14 03:16:47,681 - Model - INFO - Save model...
+2021-08-14 03:16:47,681 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 03:16:47,738 - Model - INFO - Saving model....
+2021-08-14 03:16:47,738 - Model - INFO - Best mIoU: 0.825989
+2021-08-14 03:16:47,739 - Model - INFO - **** Epoch 3 (3/100) ****
+2021-08-14 03:16:47,740 - Model - INFO - Learning rate:0.001000
+2021-08-14 03:32:26,625 - Model - INFO - Training mean loss: 0.090168
+2021-08-14 03:32:26,626 - Model - INFO - Training accuracy: 0.982053
+2021-08-14 03:32:27,225 - Model - INFO - ---- EPOCH 003 EVALUATION ----
+2021-08-14 03:37:11,048 - Model - INFO - eval mean loss: 0.090285
+2021-08-14 03:37:11,048 - Model - INFO - eval point avg class IoU: 0.819331
+2021-08-14 03:37:11,048 - Model - INFO - eval point accuracy: 0.981482
+2021-08-14 03:37:11,049 - Model - INFO - eval point avg class acc: 0.929640
+2021-08-14 03:37:11,049 - Model - INFO - eval point avg class IoU without background: 0.784674
+2021-08-14 03:37:11,049 - Model - INFO - eval point accuracy without background: 0.937661
+2021-08-14 03:37:11,049 - Model - INFO - eval point avg class acc without background: 0.916658
+2021-08-14 03:37:11,050 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.993 
+class cover          weight: 0.128, IoU: 0.921 
+class gearContainer  weight: 0.038, IoU: 0.831 
+class charger        weight: 0.012, IoU: 0.830 
+class bottom         weight: 0.045, IoU: 0.903 
+class bolt           weight: 0.006, IoU: 0.438 
+
+2021-08-14 03:37:11,050 - Model - INFO - Eval mean loss: 0.090285
+2021-08-14 03:37:11,050 - Model - INFO - Eval accuracy: 0.981482
+2021-08-14 03:37:11,050 - Model - INFO - Best mIoU: 0.825989
+2021-08-14 03:37:11,052 - Model - INFO - **** Epoch 4 (4/100) ****
+2021-08-14 03:37:11,058 - Model - INFO - Learning rate:0.001000
+2021-08-14 03:52:58,136 - Model - INFO - Training mean loss: 0.077011
+2021-08-14 03:52:58,136 - Model - INFO - Training accuracy: 0.984578
+2021-08-14 03:52:58,682 - Model - INFO - ---- EPOCH 004 EVALUATION ----
+2021-08-14 03:57:43,322 - Model - INFO - eval mean loss: 0.074522
+2021-08-14 03:57:43,323 - Model - INFO - eval point avg class IoU: 0.836286
+2021-08-14 03:57:43,323 - Model - INFO - eval point accuracy: 0.984082
+2021-08-14 03:57:43,323 - Model - INFO - eval point avg class acc: 0.943861
+2021-08-14 03:57:43,323 - Model - INFO - eval point avg class IoU without background: 0.804801
+2021-08-14 03:57:43,324 - Model - INFO - eval point accuracy without background: 0.947530
+2021-08-14 03:57:43,324 - Model - INFO - eval point avg class acc without background: 0.933637
+2021-08-14 03:57:43,324 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.994 
+class cover          weight: 0.128, IoU: 0.931 
+class gearContainer  weight: 0.038, IoU: 0.850 
+class charger        weight: 0.012, IoU: 0.833 
+class bottom         weight: 0.045, IoU: 0.925 
+class bolt           weight: 0.006, IoU: 0.485 
+
+2021-08-14 03:57:43,324 - Model - INFO - Eval mean loss: 0.074522
+2021-08-14 03:57:43,325 - Model - INFO - Eval accuracy: 0.984082
+2021-08-14 03:57:43,325 - Model - INFO - Save model...
+2021-08-14 03:57:43,325 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 03:57:43,376 - Model - INFO - Saving model....
+2021-08-14 03:57:43,376 - Model - INFO - Best mIoU: 0.836286
+2021-08-14 03:57:43,376 - Model - INFO - **** Epoch 5 (5/100) ****
+2021-08-14 03:57:43,377 - Model - INFO - Learning rate:0.001000
+2021-08-14 04:13:21,900 - Model - INFO - Training mean loss: 0.067718
+2021-08-14 04:13:21,900 - Model - INFO - Training accuracy: 0.986332
+2021-08-14 04:13:22,427 - Model - INFO - ---- EPOCH 005 EVALUATION ----
+2021-08-14 04:18:07,075 - Model - INFO - eval mean loss: 0.064053
+2021-08-14 04:18:07,075 - Model - INFO - eval point avg class IoU: 0.853719
+2021-08-14 04:18:07,075 - Model - INFO - eval point accuracy: 0.986440
+2021-08-14 04:18:07,075 - Model - INFO - eval point avg class acc: 0.953631
+2021-08-14 04:18:07,075 - Model - INFO - eval point avg class IoU without background: 0.825426
+2021-08-14 04:18:07,075 - Model - INFO - eval point accuracy without background: 0.950797
+2021-08-14 04:18:07,075 - Model - INFO - eval point avg class acc without background: 0.944944
+2021-08-14 04:18:07,076 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.939 
+class gearContainer  weight: 0.038, IoU: 0.875 
+class charger        weight: 0.012, IoU: 0.870 
+class bottom         weight: 0.045, IoU: 0.935 
+class bolt           weight: 0.006, IoU: 0.510 
+
+2021-08-14 04:18:07,076 - Model - INFO - Eval mean loss: 0.064053
+2021-08-14 04:18:07,076 - Model - INFO - Eval accuracy: 0.986440
+2021-08-14 04:18:07,076 - Model - INFO - Save model...
+2021-08-14 04:18:07,076 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 04:18:07,124 - Model - INFO - Saving model....
+2021-08-14 04:18:07,124 - Model - INFO - Best mIoU: 0.853719
+2021-08-14 04:18:07,125 - Model - INFO - **** Epoch 6 (6/100) ****
+2021-08-14 04:18:07,125 - Model - INFO - Learning rate:0.001000
+2021-08-14 04:33:52,871 - Model - INFO - Training mean loss: 0.062037
+2021-08-14 04:33:52,872 - Model - INFO - Training accuracy: 0.987437
+2021-08-14 04:33:52,873 - Model - INFO - Save model...
+2021-08-14 04:33:52,873 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 04:33:52,924 - Model - INFO - Saving model....
+2021-08-14 04:33:53,463 - Model - INFO - ---- EPOCH 006 EVALUATION ----
+2021-08-14 04:38:37,380 - Model - INFO - eval mean loss: 0.062190
+2021-08-14 04:38:37,380 - Model - INFO - eval point avg class IoU: 0.865046
+2021-08-14 04:38:37,380 - Model - INFO - eval point accuracy: 0.987014
+2021-08-14 04:38:37,380 - Model - INFO - eval point avg class acc: 0.951979
+2021-08-14 04:38:37,381 - Model - INFO - eval point avg class IoU without background: 0.839077
+2021-08-14 04:38:37,381 - Model - INFO - eval point accuracy without background: 0.957119
+2021-08-14 04:38:37,381 - Model - INFO - eval point avg class acc without background: 0.943190
+2021-08-14 04:38:37,382 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.940 
+class gearContainer  weight: 0.038, IoU: 0.864 
+class charger        weight: 0.012, IoU: 0.895 
+class bottom         weight: 0.045, IoU: 0.942 
+class bolt           weight: 0.006, IoU: 0.554 
+
+2021-08-14 04:38:37,382 - Model - INFO - Eval mean loss: 0.062190
+2021-08-14 04:38:37,382 - Model - INFO - Eval accuracy: 0.987014
+2021-08-14 04:38:37,383 - Model - INFO - Save model...
+2021-08-14 04:38:37,383 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 04:38:37,441 - Model - INFO - Saving model....
+2021-08-14 04:38:37,441 - Model - INFO - Best mIoU: 0.865046
+2021-08-14 04:38:37,442 - Model - INFO - **** Epoch 7 (7/100) ****
+2021-08-14 04:38:37,442 - Model - INFO - Learning rate:0.001000
+2021-08-14 04:54:17,484 - Model - INFO - Training mean loss: 0.058363
+2021-08-14 04:54:17,484 - Model - INFO - Training accuracy: 0.988163
+2021-08-14 04:54:18,040 - Model - INFO - ---- EPOCH 007 EVALUATION ----
+2021-08-14 04:59:03,261 - Model - INFO - eval mean loss: 0.058814
+2021-08-14 04:59:03,261 - Model - INFO - eval point avg class IoU: 0.873392
+2021-08-14 04:59:03,262 - Model - INFO - eval point accuracy: 0.988085
+2021-08-14 04:59:03,262 - Model - INFO - eval point avg class acc: 0.952582
+2021-08-14 04:59:03,262 - Model - INFO - eval point avg class IoU without background: 0.849140
+2021-08-14 04:59:03,262 - Model - INFO - eval point accuracy without background: 0.963107
+2021-08-14 04:59:03,262 - Model - INFO - eval point avg class acc without background: 0.943992
+2021-08-14 04:59:03,263 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.949 
+class gearContainer  weight: 0.038, IoU: 0.875 
+class charger        weight: 0.012, IoU: 0.892 
+class bottom         weight: 0.045, IoU: 0.945 
+class bolt           weight: 0.006, IoU: 0.584 
+
+2021-08-14 04:59:03,263 - Model - INFO - Eval mean loss: 0.058814
+2021-08-14 04:59:03,263 - Model - INFO - Eval accuracy: 0.988085
+2021-08-14 04:59:03,263 - Model - INFO - Save model...
+2021-08-14 04:59:03,263 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 04:59:03,315 - Model - INFO - Saving model....
+2021-08-14 04:59:03,315 - Model - INFO - Best mIoU: 0.873392
+2021-08-14 04:59:03,315 - Model - INFO - **** Epoch 8 (8/100) ****
+2021-08-14 04:59:03,316 - Model - INFO - Learning rate:0.001000
+2021-08-14 05:14:48,814 - Model - INFO - Training mean loss: 0.056383
+2021-08-14 05:14:48,814 - Model - INFO - Training accuracy: 0.988537
+2021-08-14 05:14:49,376 - Model - INFO - ---- EPOCH 008 EVALUATION ----
+2021-08-14 05:19:32,377 - Model - INFO - eval mean loss: 0.074048
+2021-08-14 05:19:32,377 - Model - INFO - eval point avg class IoU: 0.852622
+2021-08-14 05:19:32,378 - Model - INFO - eval point accuracy: 0.985260
+2021-08-14 05:19:32,378 - Model - INFO - eval point avg class acc: 0.938902
+2021-08-14 05:19:32,378 - Model - INFO - eval point avg class IoU without background: 0.824528
+2021-08-14 05:19:32,378 - Model - INFO - eval point accuracy without background: 0.954008
+2021-08-14 05:19:32,378 - Model - INFO - eval point avg class acc without background: 0.927767
+2021-08-14 05:19:32,379 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.993 
+class cover          weight: 0.128, IoU: 0.944 
+class gearContainer  weight: 0.038, IoU: 0.829 
+class charger        weight: 0.012, IoU: 0.855 
+class bottom         weight: 0.045, IoU: 0.927 
+class bolt           weight: 0.006, IoU: 0.568 
+
+2021-08-14 05:19:32,379 - Model - INFO - Eval mean loss: 0.074048
+2021-08-14 05:19:32,379 - Model - INFO - Eval accuracy: 0.985260
+2021-08-14 05:19:32,379 - Model - INFO - Best mIoU: 0.873392
+2021-08-14 05:19:32,380 - Model - INFO - **** Epoch 9 (9/100) ****
+2021-08-14 05:19:32,381 - Model - INFO - Learning rate:0.001000
+2021-08-14 05:35:13,953 - Model - INFO - Training mean loss: 0.052139
+2021-08-14 05:35:13,954 - Model - INFO - Training accuracy: 0.989360
+2021-08-14 05:35:14,507 - Model - INFO - ---- EPOCH 009 EVALUATION ----
+2021-08-14 05:39:59,795 - Model - INFO - eval mean loss: 0.064986
+2021-08-14 05:39:59,796 - Model - INFO - eval point avg class IoU: 0.869334
+2021-08-14 05:39:59,796 - Model - INFO - eval point accuracy: 0.987838
+2021-08-14 05:39:59,796 - Model - INFO - eval point avg class acc: 0.951875
+2021-08-14 05:39:59,797 - Model - INFO - eval point avg class IoU without background: 0.844171
+2021-08-14 05:39:59,797 - Model - INFO - eval point accuracy without background: 0.958015
+2021-08-14 05:39:59,797 - Model - INFO - eval point avg class acc without background: 0.942905
+2021-08-14 05:39:59,797 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.944 
+class gearContainer  weight: 0.038, IoU: 0.875 
+class charger        weight: 0.012, IoU: 0.892 
+class bottom         weight: 0.045, IoU: 0.947 
+class bolt           weight: 0.006, IoU: 0.562 
+
+2021-08-14 05:39:59,798 - Model - INFO - Eval mean loss: 0.064986
+2021-08-14 05:39:59,798 - Model - INFO - Eval accuracy: 0.987838
+2021-08-14 05:39:59,798 - Model - INFO - Best mIoU: 0.873392
+2021-08-14 05:39:59,799 - Model - INFO - **** Epoch 10 (10/100) ****
+2021-08-14 05:39:59,799 - Model - INFO - Learning rate:0.001000
+2021-08-14 05:55:39,890 - Model - INFO - Training mean loss: 0.052103
+2021-08-14 05:55:39,891 - Model - INFO - Training accuracy: 0.989405
+2021-08-14 05:55:40,453 - Model - INFO - ---- EPOCH 010 EVALUATION ----
+2021-08-14 06:00:29,011 - Model - INFO - eval mean loss: 0.052291
+2021-08-14 06:00:29,011 - Model - INFO - eval point avg class IoU: 0.879194
+2021-08-14 06:00:29,011 - Model - INFO - eval point accuracy: 0.988885
+2021-08-14 06:00:29,012 - Model - INFO - eval point avg class acc: 0.961318
+2021-08-14 06:00:29,012 - Model - INFO - eval point avg class IoU without background: 0.855975
+2021-08-14 06:00:29,012 - Model - INFO - eval point accuracy without background: 0.965359
+2021-08-14 06:00:29,012 - Model - INFO - eval point avg class acc without background: 0.954403
+2021-08-14 06:00:29,012 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.952 
+class gearContainer  weight: 0.038, IoU: 0.881 
+class charger        weight: 0.012, IoU: 0.890 
+class bottom         weight: 0.045, IoU: 0.949 
+class bolt           weight: 0.006, IoU: 0.607 
+
+2021-08-14 06:00:29,012 - Model - INFO - Eval mean loss: 0.052291
+2021-08-14 06:00:29,012 - Model - INFO - Eval accuracy: 0.988885
+2021-08-14 06:00:29,013 - Model - INFO - Save model...
+2021-08-14 06:00:29,013 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 06:00:29,067 - Model - INFO - Saving model....
+2021-08-14 06:00:29,067 - Model - INFO - Best mIoU: 0.879194
+2021-08-14 06:00:29,068 - Model - INFO - **** Epoch 11 (11/100) ****
+2021-08-14 06:00:29,068 - Model - INFO - Learning rate:0.000700
+2021-08-14 06:16:09,510 - Model - INFO - Training mean loss: 0.045939
+2021-08-14 06:16:09,511 - Model - INFO - Training accuracy: 0.990585
+2021-08-14 06:16:09,512 - Model - INFO - Save model...
+2021-08-14 06:16:09,513 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 06:16:09,564 - Model - INFO - Saving model....
+2021-08-14 06:16:10,098 - Model - INFO - ---- EPOCH 011 EVALUATION ----
+2021-08-14 06:20:55,739 - Model - INFO - eval mean loss: 0.047665
+2021-08-14 06:20:55,739 - Model - INFO - eval point avg class IoU: 0.883202
+2021-08-14 06:20:55,739 - Model - INFO - eval point accuracy: 0.989588
+2021-08-14 06:20:55,740 - Model - INFO - eval point avg class acc: 0.965028
+2021-08-14 06:20:55,740 - Model - INFO - eval point avg class IoU without background: 0.860622
+2021-08-14 06:20:55,740 - Model - INFO - eval point accuracy without background: 0.964866
+2021-08-14 06:20:55,740 - Model - INFO - eval point avg class acc without background: 0.958643
+2021-08-14 06:20:55,740 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.996 
+class cover          weight: 0.128, IoU: 0.955 
+class gearContainer  weight: 0.038, IoU: 0.882 
+class charger        weight: 0.012, IoU: 0.913 
+class bottom         weight: 0.045, IoU: 0.954 
+class bolt           weight: 0.006, IoU: 0.599 
+
+2021-08-14 06:20:55,741 - Model - INFO - Eval mean loss: 0.047665
+2021-08-14 06:20:55,741 - Model - INFO - Eval accuracy: 0.989588
+2021-08-14 06:20:55,741 - Model - INFO - Save model...
+2021-08-14 06:20:55,742 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 06:20:55,794 - Model - INFO - Saving model....
+2021-08-14 06:20:55,794 - Model - INFO - Best mIoU: 0.883202
+2021-08-14 06:20:55,795 - Model - INFO - **** Epoch 12 (12/100) ****
+2021-08-14 06:20:55,795 - Model - INFO - Learning rate:0.000700
+2021-08-14 06:36:37,802 - Model - INFO - Training mean loss: 0.045124
+2021-08-14 06:36:37,803 - Model - INFO - Training accuracy: 0.990766
+2021-08-14 06:36:38,323 - Model - INFO - ---- EPOCH 012 EVALUATION ----
+2021-08-14 06:41:23,792 - Model - INFO - eval mean loss: 0.050926
+2021-08-14 06:41:23,792 - Model - INFO - eval point avg class IoU: 0.877801
+2021-08-14 06:41:23,793 - Model - INFO - eval point accuracy: 0.989179
+2021-08-14 06:41:23,793 - Model - INFO - eval point avg class acc: 0.962500
+2021-08-14 06:41:23,793 - Model - INFO - eval point avg class IoU without background: 0.854212
+2021-08-14 06:41:23,793 - Model - INFO - eval point accuracy without background: 0.963623
+2021-08-14 06:41:23,793 - Model - INFO - eval point avg class acc without background: 0.955641
+2021-08-14 06:41:23,793 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.996 
+class cover          weight: 0.128, IoU: 0.954 
+class gearContainer  weight: 0.038, IoU: 0.889 
+class charger        weight: 0.012, IoU: 0.889 
+class bottom         weight: 0.045, IoU: 0.949 
+class bolt           weight: 0.006, IoU: 0.590 
+
+2021-08-14 06:41:23,793 - Model - INFO - Eval mean loss: 0.050926
+2021-08-14 06:41:23,793 - Model - INFO - Eval accuracy: 0.989179
+2021-08-14 06:41:23,793 - Model - INFO - Best mIoU: 0.883202
+2021-08-14 06:41:23,794 - Model - INFO - **** Epoch 13 (13/100) ****
+2021-08-14 06:41:23,794 - Model - INFO - Learning rate:0.000700
+2021-08-14 06:57:13,478 - Model - INFO - Training mean loss: 0.046592
+2021-08-14 06:57:13,478 - Model - INFO - Training accuracy: 0.990437
+2021-08-14 06:57:14,002 - Model - INFO - ---- EPOCH 013 EVALUATION ----
+2021-08-14 07:01:59,884 - Model - INFO - eval mean loss: 0.046055
+2021-08-14 07:01:59,884 - Model - INFO - eval point avg class IoU: 0.892640
+2021-08-14 07:01:59,884 - Model - INFO - eval point accuracy: 0.990631
+2021-08-14 07:01:59,885 - Model - INFO - eval point avg class acc: 0.963755
+2021-08-14 07:01:59,885 - Model - INFO - eval point avg class IoU without background: 0.871840
+2021-08-14 07:01:59,885 - Model - INFO - eval point accuracy without background: 0.967181
+2021-08-14 07:01:59,885 - Model - INFO - eval point avg class acc without background: 0.956982
+2021-08-14 07:01:59,885 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.958 
+class gearContainer  weight: 0.038, IoU: 0.897 
+class charger        weight: 0.012, IoU: 0.921 
+class bottom         weight: 0.045, IoU: 0.954 
+class bolt           weight: 0.006, IoU: 0.629 
+
+2021-08-14 07:01:59,885 - Model - INFO - Eval mean loss: 0.046055
+2021-08-14 07:01:59,885 - Model - INFO - Eval accuracy: 0.990631
+2021-08-14 07:01:59,885 - Model - INFO - Save model...
+2021-08-14 07:01:59,885 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 07:01:59,933 - Model - INFO - Saving model....
+2021-08-14 07:01:59,934 - Model - INFO - Best mIoU: 0.892640
+2021-08-14 07:01:59,934 - Model - INFO - **** Epoch 14 (14/100) ****
+2021-08-14 07:01:59,935 - Model - INFO - Learning rate:0.000700
+2021-08-14 07:17:41,153 - Model - INFO - Training mean loss: 0.043134
+2021-08-14 07:17:41,153 - Model - INFO - Training accuracy: 0.991177
+2021-08-14 07:17:41,709 - Model - INFO - ---- EPOCH 014 EVALUATION ----
+2021-08-14 07:22:26,886 - Model - INFO - eval mean loss: 0.057209
+2021-08-14 07:22:26,886 - Model - INFO - eval point avg class IoU: 0.873209
+2021-08-14 07:22:26,886 - Model - INFO - eval point accuracy: 0.988137
+2021-08-14 07:22:26,886 - Model - INFO - eval point avg class acc: 0.958919
+2021-08-14 07:22:26,886 - Model - INFO - eval point avg class IoU without background: 0.848960
+2021-08-14 07:22:26,886 - Model - INFO - eval point accuracy without background: 0.964656
+2021-08-14 07:22:26,887 - Model - INFO - eval point avg class acc without background: 0.951676
+2021-08-14 07:22:26,887 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.994 
+class cover          weight: 0.128, IoU: 0.951 
+class gearContainer  weight: 0.038, IoU: 0.882 
+class charger        weight: 0.012, IoU: 0.857 
+class bottom         weight: 0.045, IoU: 0.942 
+class bolt           weight: 0.006, IoU: 0.613 
+
+2021-08-14 07:22:26,887 - Model - INFO - Eval mean loss: 0.057209
+2021-08-14 07:22:26,887 - Model - INFO - Eval accuracy: 0.988137
+2021-08-14 07:22:26,887 - Model - INFO - Best mIoU: 0.892640
+2021-08-14 07:22:26,888 - Model - INFO - **** Epoch 15 (15/100) ****
+2021-08-14 07:22:26,888 - Model - INFO - Learning rate:0.000700
+2021-08-14 07:38:15,890 - Model - INFO - Training mean loss: 0.043912
+2021-08-14 07:38:15,891 - Model - INFO - Training accuracy: 0.991011
+2021-08-14 07:38:16,456 - Model - INFO - ---- EPOCH 015 EVALUATION ----
+2021-08-14 07:43:02,182 - Model - INFO - eval mean loss: 0.059392
+2021-08-14 07:43:02,182 - Model - INFO - eval point avg class IoU: 0.877057
+2021-08-14 07:43:02,182 - Model - INFO - eval point accuracy: 0.988220
+2021-08-14 07:43:02,182 - Model - INFO - eval point avg class acc: 0.956169
+2021-08-14 07:43:02,183 - Model - INFO - eval point avg class IoU without background: 0.853512
+2021-08-14 07:43:02,183 - Model - INFO - eval point accuracy without background: 0.961783
+2021-08-14 07:43:02,183 - Model - INFO - eval point avg class acc without background: 0.948182
+2021-08-14 07:43:02,183 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.995 
+class cover          weight: 0.128, IoU: 0.952 
+class gearContainer  weight: 0.038, IoU: 0.865 
+class charger        weight: 0.012, IoU: 0.895 
+class bottom         weight: 0.045, IoU: 0.942 
+class bolt           weight: 0.006, IoU: 0.614 
+
+2021-08-14 07:43:02,184 - Model - INFO - Eval mean loss: 0.059392
+2021-08-14 07:43:02,184 - Model - INFO - Eval accuracy: 0.988220
+2021-08-14 07:43:02,184 - Model - INFO - Best mIoU: 0.892640
+2021-08-14 07:43:02,185 - Model - INFO - **** Epoch 16 (16/100) ****
+2021-08-14 07:43:02,185 - Model - INFO - Learning rate:0.000700
+2021-08-14 07:58:44,609 - Model - INFO - Training mean loss: 0.043672
+2021-08-14 07:58:44,610 - Model - INFO - Training accuracy: 0.991070
+2021-08-14 07:58:44,616 - Model - INFO - Save model...
+2021-08-14 07:58:44,616 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 07:58:44,667 - Model - INFO - Saving model....
+2021-08-14 07:58:45,219 - Model - INFO - ---- EPOCH 016 EVALUATION ----
+2021-08-14 08:03:30,967 - Model - INFO - eval mean loss: 0.046209
+2021-08-14 08:03:30,968 - Model - INFO - eval point avg class IoU: 0.897349
+2021-08-14 08:03:30,968 - Model - INFO - eval point accuracy: 0.991414
+2021-08-14 08:03:30,968 - Model - INFO - eval point avg class acc: 0.962013
+2021-08-14 08:03:30,969 - Model - INFO - eval point avg class IoU without background: 0.877441
+2021-08-14 08:03:30,969 - Model - INFO - eval point accuracy without background: 0.970115
+2021-08-14 08:03:30,969 - Model - INFO - eval point avg class acc without background: 0.954863
+2021-08-14 08:03:30,969 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.903 
+class charger        weight: 0.012, IoU: 0.915 
+class bottom         weight: 0.045, IoU: 0.956 
+class bolt           weight: 0.006, IoU: 0.649 
+
+2021-08-14 08:03:30,969 - Model - INFO - Eval mean loss: 0.046209
+2021-08-14 08:03:30,969 - Model - INFO - Eval accuracy: 0.991414
+2021-08-14 08:03:30,969 - Model - INFO - Save model...
+2021-08-14 08:03:30,969 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 08:03:31,017 - Model - INFO - Saving model....
+2021-08-14 08:03:31,017 - Model - INFO - Best mIoU: 0.897349
+2021-08-14 08:03:31,018 - Model - INFO - **** Epoch 17 (17/100) ****
+2021-08-14 08:03:31,018 - Model - INFO - Learning rate:0.000700
+2021-08-14 08:19:16,023 - Model - INFO - Training mean loss: 0.043661
+2021-08-14 08:19:16,023 - Model - INFO - Training accuracy: 0.991055
+2021-08-14 08:19:16,599 - Model - INFO - ---- EPOCH 017 EVALUATION ----
+2021-08-14 08:24:09,388 - Model - INFO - eval mean loss: 0.044478
+2021-08-14 08:24:09,389 - Model - INFO - eval point avg class IoU: 0.892044
+2021-08-14 08:24:09,389 - Model - INFO - eval point accuracy: 0.990985
+2021-08-14 08:24:09,389 - Model - INFO - eval point avg class acc: 0.964641
+2021-08-14 08:24:09,390 - Model - INFO - eval point avg class IoU without background: 0.871065
+2021-08-14 08:24:09,390 - Model - INFO - eval point accuracy without background: 0.967784
+2021-08-14 08:24:09,390 - Model - INFO - eval point avg class acc without background: 0.957988
+2021-08-14 08:24:09,390 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.961 
+class gearContainer  weight: 0.038, IoU: 0.902 
+class charger        weight: 0.012, IoU: 0.917 
+class bottom         weight: 0.045, IoU: 0.957 
+class bolt           weight: 0.006, IoU: 0.618 
+
+2021-08-14 08:24:09,391 - Model - INFO - Eval mean loss: 0.044478
+2021-08-14 08:24:09,391 - Model - INFO - Eval accuracy: 0.990985
+2021-08-14 08:24:09,391 - Model - INFO - Best mIoU: 0.897349
+2021-08-14 08:24:09,392 - Model - INFO - **** Epoch 18 (18/100) ****
+2021-08-14 08:24:09,392 - Model - INFO - Learning rate:0.000700
+2021-08-14 08:39:51,945 - Model - INFO - Training mean loss: 0.042165
+2021-08-14 08:39:51,946 - Model - INFO - Training accuracy: 0.991367
+2021-08-14 08:39:52,504 - Model - INFO - ---- EPOCH 018 EVALUATION ----
+2021-08-14 08:44:38,854 - Model - INFO - eval mean loss: 0.048822
+2021-08-14 08:44:38,855 - Model - INFO - eval point avg class IoU: 0.883761
+2021-08-14 08:44:38,855 - Model - INFO - eval point accuracy: 0.989911
+2021-08-14 08:44:38,855 - Model - INFO - eval point avg class acc: 0.962797
+2021-08-14 08:44:38,855 - Model - INFO - eval point avg class IoU without background: 0.861242
+2021-08-14 08:44:38,855 - Model - INFO - eval point accuracy without background: 0.964541
+2021-08-14 08:44:38,855 - Model - INFO - eval point avg class acc without background: 0.955861
+2021-08-14 08:44:38,855 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.996 
+class cover          weight: 0.128, IoU: 0.957 
+class gearContainer  weight: 0.038, IoU: 0.891 
+class charger        weight: 0.012, IoU: 0.907 
+class bottom         weight: 0.045, IoU: 0.952 
+class bolt           weight: 0.006, IoU: 0.599 
+
+2021-08-14 08:44:38,855 - Model - INFO - Eval mean loss: 0.048822
+2021-08-14 08:44:38,855 - Model - INFO - Eval accuracy: 0.989911
+2021-08-14 08:44:38,855 - Model - INFO - Best mIoU: 0.897349
+2021-08-14 08:44:38,856 - Model - INFO - **** Epoch 19 (19/100) ****
+2021-08-14 08:44:38,856 - Model - INFO - Learning rate:0.000700
+2021-08-14 09:00:20,529 - Model - INFO - Training mean loss: 0.041681
+2021-08-14 09:00:20,530 - Model - INFO - Training accuracy: 0.991456
+2021-08-14 09:00:21,058 - Model - INFO - ---- EPOCH 019 EVALUATION ----
+2021-08-14 09:05:07,003 - Model - INFO - eval mean loss: 0.044001
+2021-08-14 09:05:07,003 - Model - INFO - eval point avg class IoU: 0.894240
+2021-08-14 09:05:07,003 - Model - INFO - eval point accuracy: 0.990572
+2021-08-14 09:05:07,004 - Model - INFO - eval point avg class acc: 0.967889
+2021-08-14 09:05:07,004 - Model - INFO - eval point avg class IoU without background: 0.873887
+2021-08-14 09:05:07,004 - Model - INFO - eval point accuracy without background: 0.969900
+2021-08-14 09:05:07,004 - Model - INFO - eval point avg class acc without background: 0.962121
+2021-08-14 09:05:07,004 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.996 
+class cover          weight: 0.128, IoU: 0.959 
+class gearContainer  weight: 0.038, IoU: 0.899 
+class charger        weight: 0.012, IoU: 0.924 
+class bottom         weight: 0.045, IoU: 0.958 
+class bolt           weight: 0.006, IoU: 0.629 
+
+2021-08-14 09:05:07,005 - Model - INFO - Eval mean loss: 0.044001
+2021-08-14 09:05:07,005 - Model - INFO - Eval accuracy: 0.990572
+2021-08-14 09:05:07,005 - Model - INFO - Best mIoU: 0.897349
+2021-08-14 09:05:07,006 - Model - INFO - **** Epoch 20 (20/100) ****
+2021-08-14 09:05:07,007 - Model - INFO - Learning rate:0.000700
+2021-08-14 09:20:54,679 - Model - INFO - Training mean loss: 0.041837
+2021-08-14 09:20:54,679 - Model - INFO - Training accuracy: 0.991428
+2021-08-14 09:20:55,224 - Model - INFO - ---- EPOCH 020 EVALUATION ----
+2021-08-14 09:25:40,522 - Model - INFO - eval mean loss: 0.043320
+2021-08-14 09:25:40,522 - Model - INFO - eval point avg class IoU: 0.892719
+2021-08-14 09:25:40,523 - Model - INFO - eval point accuracy: 0.990951
+2021-08-14 09:25:40,523 - Model - INFO - eval point avg class acc: 0.967279
+2021-08-14 09:25:40,523 - Model - INFO - eval point avg class IoU without background: 0.871907
+2021-08-14 09:25:40,523 - Model - INFO - eval point accuracy without background: 0.968690
+2021-08-14 09:25:40,523 - Model - INFO - eval point avg class acc without background: 0.961218
+2021-08-14 09:25:40,524 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.961 
+class gearContainer  weight: 0.038, IoU: 0.907 
+class charger        weight: 0.012, IoU: 0.923 
+class bottom         weight: 0.045, IoU: 0.954 
+class bolt           weight: 0.006, IoU: 0.614 
+
+2021-08-14 09:25:40,524 - Model - INFO - Eval mean loss: 0.043320
+2021-08-14 09:25:40,524 - Model - INFO - Eval accuracy: 0.990951
+2021-08-14 09:25:40,524 - Model - INFO - Best mIoU: 0.897349
+2021-08-14 09:25:40,525 - Model - INFO - **** Epoch 21 (21/100) ****
+2021-08-14 09:25:40,526 - Model - INFO - Learning rate:0.000490
+2021-08-14 09:41:20,662 - Model - INFO - Training mean loss: 0.039014
+2021-08-14 09:41:20,662 - Model - INFO - Training accuracy: 0.991995
+2021-08-14 09:41:20,662 - Model - INFO - Save model...
+2021-08-14 09:41:20,663 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 09:41:20,717 - Model - INFO - Saving model....
+2021-08-14 09:41:21,244 - Model - INFO - ---- EPOCH 021 EVALUATION ----
+2021-08-14 09:46:07,809 - Model - INFO - eval mean loss: 0.042056
+2021-08-14 09:46:07,809 - Model - INFO - eval point avg class IoU: 0.900485
+2021-08-14 09:46:07,809 - Model - INFO - eval point accuracy: 0.991830
+2021-08-14 09:46:07,810 - Model - INFO - eval point avg class acc: 0.967133
+2021-08-14 09:46:07,810 - Model - INFO - eval point avg class IoU without background: 0.881130
+2021-08-14 09:46:07,810 - Model - INFO - eval point accuracy without background: 0.970182
+2021-08-14 09:46:07,810 - Model - INFO - eval point avg class acc without background: 0.960902
+2021-08-14 09:46:07,811 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.965 
+class gearContainer  weight: 0.038, IoU: 0.905 
+class charger        weight: 0.012, IoU: 0.915 
+class bottom         weight: 0.045, IoU: 0.960 
+class bolt           weight: 0.006, IoU: 0.660 
+
+2021-08-14 09:46:07,811 - Model - INFO - Eval mean loss: 0.042056
+2021-08-14 09:46:07,811 - Model - INFO - Eval accuracy: 0.991830
+2021-08-14 09:46:07,811 - Model - INFO - Save model...
+2021-08-14 09:46:07,811 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 09:46:07,885 - Model - INFO - Saving model....
+2021-08-14 09:46:07,885 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 09:46:07,887 - Model - INFO - **** Epoch 22 (22/100) ****
+2021-08-14 09:46:07,888 - Model - INFO - Learning rate:0.000490
+2021-08-14 10:01:58,771 - Model - INFO - Training mean loss: 0.038413
+2021-08-14 10:01:58,772 - Model - INFO - Training accuracy: 0.992132
+2021-08-14 10:01:59,317 - Model - INFO - ---- EPOCH 022 EVALUATION ----
+2021-08-14 10:06:45,632 - Model - INFO - eval mean loss: 0.052087
+2021-08-14 10:06:45,632 - Model - INFO - eval point avg class IoU: 0.887642
+2021-08-14 10:06:45,632 - Model - INFO - eval point accuracy: 0.990695
+2021-08-14 10:06:45,632 - Model - INFO - eval point avg class acc: 0.958917
+2021-08-14 10:06:45,633 - Model - INFO - eval point avg class IoU without background: 0.865755
+2021-08-14 10:06:45,633 - Model - INFO - eval point accuracy without background: 0.965330
+2021-08-14 10:06:45,633 - Model - INFO - eval point avg class acc without background: 0.951049
+2021-08-14 10:06:45,633 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.962 
+class gearContainer  weight: 0.038, IoU: 0.891 
+class charger        weight: 0.012, IoU: 0.867 
+class bottom         weight: 0.045, IoU: 0.950 
+class bolt           weight: 0.006, IoU: 0.659 
+
+2021-08-14 10:06:45,634 - Model - INFO - Eval mean loss: 0.052087
+2021-08-14 10:06:45,634 - Model - INFO - Eval accuracy: 0.990695
+2021-08-14 10:06:45,634 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 10:06:45,635 - Model - INFO - **** Epoch 23 (23/100) ****
+2021-08-14 10:06:45,636 - Model - INFO - Learning rate:0.000490
+2021-08-14 10:22:27,838 - Model - INFO - Training mean loss: 0.038682
+2021-08-14 10:22:27,838 - Model - INFO - Training accuracy: 0.992080
+2021-08-14 10:22:28,388 - Model - INFO - ---- EPOCH 023 EVALUATION ----
+2021-08-14 10:27:15,794 - Model - INFO - eval mean loss: 0.041929
+2021-08-14 10:27:15,795 - Model - INFO - eval point avg class IoU: 0.895258
+2021-08-14 10:27:15,795 - Model - INFO - eval point accuracy: 0.991310
+2021-08-14 10:27:15,795 - Model - INFO - eval point avg class acc: 0.968216
+2021-08-14 10:27:15,796 - Model - INFO - eval point avg class IoU without background: 0.874869
+2021-08-14 10:27:15,796 - Model - INFO - eval point accuracy without background: 0.968472
+2021-08-14 10:27:15,796 - Model - INFO - eval point avg class acc without background: 0.962235
+2021-08-14 10:27:15,797 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.961 
+class gearContainer  weight: 0.038, IoU: 0.905 
+class charger        weight: 0.012, IoU: 0.925 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.624 
+
+2021-08-14 10:27:15,797 - Model - INFO - Eval mean loss: 0.041929
+2021-08-14 10:27:15,797 - Model - INFO - Eval accuracy: 0.991310
+2021-08-14 10:27:15,797 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 10:27:15,798 - Model - INFO - **** Epoch 24 (24/100) ****
+2021-08-14 10:27:15,799 - Model - INFO - Learning rate:0.000490
+2021-08-14 10:43:06,675 - Model - INFO - Training mean loss: 0.038211
+2021-08-14 10:43:06,675 - Model - INFO - Training accuracy: 0.992183
+2021-08-14 10:43:07,264 - Model - INFO - ---- EPOCH 024 EVALUATION ----
+2021-08-14 10:47:50,264 - Model - INFO - eval mean loss: 0.043031
+2021-08-14 10:47:50,265 - Model - INFO - eval point avg class IoU: 0.896269
+2021-08-14 10:47:50,265 - Model - INFO - eval point accuracy: 0.991357
+2021-08-14 10:47:50,265 - Model - INFO - eval point avg class acc: 0.967451
+2021-08-14 10:47:50,265 - Model - INFO - eval point avg class IoU without background: 0.876145
+2021-08-14 10:47:50,265 - Model - INFO - eval point accuracy without background: 0.970298
+2021-08-14 10:47:50,265 - Model - INFO - eval point avg class acc without background: 0.961415
+2021-08-14 10:47:50,266 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.906 
+class charger        weight: 0.012, IoU: 0.907 
+class bottom         weight: 0.045, IoU: 0.955 
+class bolt           weight: 0.006, IoU: 0.649 
+
+2021-08-14 10:47:50,266 - Model - INFO - Eval mean loss: 0.043031
+2021-08-14 10:47:50,266 - Model - INFO - Eval accuracy: 0.991357
+2021-08-14 10:47:50,266 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 10:47:50,267 - Model - INFO - **** Epoch 25 (25/100) ****
+2021-08-14 10:47:50,267 - Model - INFO - Learning rate:0.000490
+2021-08-14 11:03:30,288 - Model - INFO - Training mean loss: 0.038360
+2021-08-14 11:03:30,289 - Model - INFO - Training accuracy: 0.992149
+2021-08-14 11:03:30,843 - Model - INFO - ---- EPOCH 025 EVALUATION ----
+2021-08-14 11:08:17,924 - Model - INFO - eval mean loss: 0.045470
+2021-08-14 11:08:17,924 - Model - INFO - eval point avg class IoU: 0.892435
+2021-08-14 11:08:17,924 - Model - INFO - eval point accuracy: 0.990876
+2021-08-14 11:08:17,924 - Model - INFO - eval point avg class acc: 0.964208
+2021-08-14 11:08:17,925 - Model - INFO - eval point avg class IoU without background: 0.871598
+2021-08-14 11:08:17,925 - Model - INFO - eval point accuracy without background: 0.969759
+2021-08-14 11:08:17,925 - Model - INFO - eval point avg class acc without background: 0.957616
+2021-08-14 11:08:17,925 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.960 
+class gearContainer  weight: 0.038, IoU: 0.905 
+class charger        weight: 0.012, IoU: 0.911 
+class bottom         weight: 0.045, IoU: 0.957 
+class bolt           weight: 0.006, IoU: 0.626 
+
+2021-08-14 11:08:17,925 - Model - INFO - Eval mean loss: 0.045470
+2021-08-14 11:08:17,926 - Model - INFO - Eval accuracy: 0.990876
+2021-08-14 11:08:17,926 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 11:08:17,928 - Model - INFO - **** Epoch 26 (26/100) ****
+2021-08-14 11:08:17,929 - Model - INFO - Learning rate:0.000490
+2021-08-14 11:24:03,821 - Model - INFO - Training mean loss: 0.038811
+2021-08-14 11:24:03,821 - Model - INFO - Training accuracy: 0.992052
+2021-08-14 11:24:03,822 - Model - INFO - Save model...
+2021-08-14 11:24:03,823 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 11:24:03,885 - Model - INFO - Saving model....
+2021-08-14 11:24:04,432 - Model - INFO - ---- EPOCH 026 EVALUATION ----
+2021-08-14 11:29:00,614 - Model - INFO - eval mean loss: 0.043568
+2021-08-14 11:29:00,614 - Model - INFO - eval point avg class IoU: 0.893887
+2021-08-14 11:29:00,614 - Model - INFO - eval point accuracy: 0.991292
+2021-08-14 11:29:00,614 - Model - INFO - eval point avg class acc: 0.966930
+2021-08-14 11:29:00,615 - Model - INFO - eval point avg class IoU without background: 0.873233
+2021-08-14 11:29:00,615 - Model - INFO - eval point accuracy without background: 0.968392
+2021-08-14 11:29:00,615 - Model - INFO - eval point avg class acc without background: 0.960693
+2021-08-14 11:29:00,615 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.962 
+class gearContainer  weight: 0.038, IoU: 0.904 
+class charger        weight: 0.012, IoU: 0.916 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.625 
+
+2021-08-14 11:29:00,615 - Model - INFO - Eval mean loss: 0.043568
+2021-08-14 11:29:00,615 - Model - INFO - Eval accuracy: 0.991292
+2021-08-14 11:29:00,615 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 11:29:00,616 - Model - INFO - **** Epoch 27 (27/100) ****
+2021-08-14 11:29:00,616 - Model - INFO - Learning rate:0.000490
+2021-08-14 11:44:43,479 - Model - INFO - Training mean loss: 0.037344
+2021-08-14 11:44:43,480 - Model - INFO - Training accuracy: 0.992336
+2021-08-14 11:44:44,047 - Model - INFO - ---- EPOCH 027 EVALUATION ----
+2021-08-14 11:49:30,837 - Model - INFO - eval mean loss: 0.041613
+2021-08-14 11:49:30,837 - Model - INFO - eval point avg class IoU: 0.891617
+2021-08-14 11:49:30,837 - Model - INFO - eval point accuracy: 0.990693
+2021-08-14 11:49:30,837 - Model - INFO - eval point avg class acc: 0.970793
+2021-08-14 11:49:30,837 - Model - INFO - eval point avg class IoU without background: 0.870595
+2021-08-14 11:49:30,837 - Model - INFO - eval point accuracy without background: 0.968272
+2021-08-14 11:49:30,837 - Model - INFO - eval point avg class acc without background: 0.965477
+2021-08-14 11:49:30,837 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.958 
+class gearContainer  weight: 0.038, IoU: 0.898 
+class charger        weight: 0.012, IoU: 0.916 
+class bottom         weight: 0.045, IoU: 0.960 
+class bolt           weight: 0.006, IoU: 0.620 
+
+2021-08-14 11:49:30,837 - Model - INFO - Eval mean loss: 0.041613
+2021-08-14 11:49:30,838 - Model - INFO - Eval accuracy: 0.990693
+2021-08-14 11:49:30,838 - Model - INFO - Best mIoU: 0.900485
+2021-08-14 11:49:30,838 - Model - INFO - **** Epoch 28 (28/100) ****
+2021-08-14 11:49:30,839 - Model - INFO - Learning rate:0.000490
+2021-08-14 12:05:18,732 - Model - INFO - Training mean loss: 0.038201
+2021-08-14 12:05:18,733 - Model - INFO - Training accuracy: 0.992194
+2021-08-14 12:05:19,290 - Model - INFO - ---- EPOCH 028 EVALUATION ----
+2021-08-14 12:10:05,579 - Model - INFO - eval mean loss: 0.042628
+2021-08-14 12:10:05,580 - Model - INFO - eval point avg class IoU: 0.901476
+2021-08-14 12:10:05,580 - Model - INFO - eval point accuracy: 0.991654
+2021-08-14 12:10:05,582 - Model - INFO - eval point avg class acc: 0.965605
+2021-08-14 12:10:05,582 - Model - INFO - eval point avg class IoU without background: 0.882382
+2021-08-14 12:10:05,582 - Model - INFO - eval point accuracy without background: 0.971177
+2021-08-14 12:10:05,582 - Model - INFO - eval point avg class acc without background: 0.959175
+2021-08-14 12:10:05,582 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.906 
+class charger        weight: 0.012, IoU: 0.923 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.661 
+
+2021-08-14 12:10:05,582 - Model - INFO - Eval mean loss: 0.042628
+2021-08-14 12:10:05,583 - Model - INFO - Eval accuracy: 0.991654
+2021-08-14 12:10:05,583 - Model - INFO - Save model...
+2021-08-14 12:10:05,583 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 12:10:05,626 - Model - INFO - Saving model....
+2021-08-14 12:10:05,626 - Model - INFO - Best mIoU: 0.901476
+2021-08-14 12:10:05,627 - Model - INFO - **** Epoch 29 (29/100) ****
+2021-08-14 12:10:05,627 - Model - INFO - Learning rate:0.000490
+2021-08-14 12:25:57,805 - Model - INFO - Training mean loss: 0.037047
+2021-08-14 12:25:57,805 - Model - INFO - Training accuracy: 0.992410
+2021-08-14 12:25:58,363 - Model - INFO - ---- EPOCH 029 EVALUATION ----
+2021-08-14 12:30:43,699 - Model - INFO - eval mean loss: 0.045013
+2021-08-14 12:30:43,699 - Model - INFO - eval point avg class IoU: 0.899701
+2021-08-14 12:30:43,699 - Model - INFO - eval point accuracy: 0.991188
+2021-08-14 12:30:43,699 - Model - INFO - eval point avg class acc: 0.964980
+2021-08-14 12:30:43,699 - Model - INFO - eval point avg class IoU without background: 0.880369
+2021-08-14 12:30:43,699 - Model - INFO - eval point accuracy without background: 0.971236
+2021-08-14 12:30:43,699 - Model - INFO - eval point avg class acc without background: 0.958549
+2021-08-14 12:30:43,699 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.996 
+class cover          weight: 0.128, IoU: 0.961 
+class gearContainer  weight: 0.038, IoU: 0.904 
+class charger        weight: 0.012, IoU: 0.921 
+class bottom         weight: 0.045, IoU: 0.960 
+class bolt           weight: 0.006, IoU: 0.656 
+
+2021-08-14 12:30:43,700 - Model - INFO - Eval mean loss: 0.045013
+2021-08-14 12:30:43,700 - Model - INFO - Eval accuracy: 0.991188
+2021-08-14 12:30:43,700 - Model - INFO - Best mIoU: 0.901476
+2021-08-14 12:30:43,700 - Model - INFO - **** Epoch 30 (30/100) ****
+2021-08-14 12:30:43,700 - Model - INFO - Learning rate:0.000490
+2021-08-14 12:46:26,687 - Model - INFO - Training mean loss: 0.038154
+2021-08-14 12:46:26,687 - Model - INFO - Training accuracy: 0.992178
+2021-08-14 12:46:27,261 - Model - INFO - ---- EPOCH 030 EVALUATION ----
+2021-08-14 12:51:14,656 - Model - INFO - eval mean loss: 0.042170
+2021-08-14 12:51:14,656 - Model - INFO - eval point avg class IoU: 0.905633
+2021-08-14 12:51:14,656 - Model - INFO - eval point accuracy: 0.992165
+2021-08-14 12:51:14,657 - Model - INFO - eval point avg class acc: 0.965999
+2021-08-14 12:51:14,657 - Model - INFO - eval point avg class IoU without background: 0.887338
+2021-08-14 12:51:14,657 - Model - INFO - eval point accuracy without background: 0.973268
+2021-08-14 12:51:14,657 - Model - INFO - eval point avg class acc without background: 0.959639
+2021-08-14 12:51:14,658 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.967 
+class gearContainer  weight: 0.038, IoU: 0.910 
+class charger        weight: 0.012, IoU: 0.925 
+class bottom         weight: 0.045, IoU: 0.960 
+class bolt           weight: 0.006, IoU: 0.674 
+
+2021-08-14 12:51:14,658 - Model - INFO - Eval mean loss: 0.042170
+2021-08-14 12:51:14,658 - Model - INFO - Eval accuracy: 0.992165
+2021-08-14 12:51:14,658 - Model - INFO - Save model...
+2021-08-14 12:51:14,658 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 12:51:14,711 - Model - INFO - Saving model....
+2021-08-14 12:51:14,711 - Model - INFO - Best mIoU: 0.905633
+2021-08-14 12:51:14,712 - Model - INFO - **** Epoch 31 (31/100) ****
+2021-08-14 12:51:14,712 - Model - INFO - Learning rate:0.000343
+2021-08-14 13:07:05,833 - Model - INFO - Training mean loss: 0.034931
+2021-08-14 13:07:05,834 - Model - INFO - Training accuracy: 0.992822
+2021-08-14 13:07:05,835 - Model - INFO - Save model...
+2021-08-14 13:07:05,836 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 13:07:05,888 - Model - INFO - Saving model....
+2021-08-14 13:07:06,439 - Model - INFO - ---- EPOCH 031 EVALUATION ----
+2021-08-14 13:11:52,054 - Model - INFO - eval mean loss: 0.040681
+2021-08-14 13:11:52,054 - Model - INFO - eval point avg class IoU: 0.899495
+2021-08-14 13:11:52,055 - Model - INFO - eval point accuracy: 0.991649
+2021-08-14 13:11:52,055 - Model - INFO - eval point avg class acc: 0.969083
+2021-08-14 13:11:52,055 - Model - INFO - eval point avg class IoU without background: 0.879976
+2021-08-14 13:11:52,055 - Model - INFO - eval point accuracy without background: 0.970569
+2021-08-14 13:11:52,055 - Model - INFO - eval point avg class acc without background: 0.963313
+2021-08-14 13:11:52,055 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.907 
+class charger        weight: 0.012, IoU: 0.920 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.649 
+
+2021-08-14 13:11:52,056 - Model - INFO - Eval mean loss: 0.040681
+2021-08-14 13:11:52,056 - Model - INFO - Eval accuracy: 0.991649
+2021-08-14 13:11:52,056 - Model - INFO - Best mIoU: 0.905633
+2021-08-14 13:11:52,057 - Model - INFO - **** Epoch 32 (32/100) ****
+2021-08-14 13:11:52,057 - Model - INFO - Learning rate:0.000343
+2021-08-14 13:27:36,524 - Model - INFO - Training mean loss: 0.035117
+2021-08-14 13:27:36,524 - Model - INFO - Training accuracy: 0.992783
+2021-08-14 13:27:37,081 - Model - INFO - ---- EPOCH 032 EVALUATION ----
+2021-08-14 13:32:24,004 - Model - INFO - eval mean loss: 0.073830
+2021-08-14 13:32:24,005 - Model - INFO - eval point avg class IoU: 0.882348
+2021-08-14 13:32:24,005 - Model - INFO - eval point accuracy: 0.988188
+2021-08-14 13:32:24,005 - Model - INFO - eval point avg class acc: 0.952936
+2021-08-14 13:32:24,006 - Model - INFO - eval point avg class IoU without background: 0.860049
+2021-08-14 13:32:24,006 - Model - INFO - eval point accuracy without background: 0.953878
+2021-08-14 13:32:24,006 - Model - INFO - eval point avg class acc without background: 0.943840
+2021-08-14 13:32:24,006 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.994 
+class cover          weight: 0.128, IoU: 0.945 
+class gearContainer  weight: 0.038, IoU: 0.885 
+class charger        weight: 0.012, IoU: 0.895 
+class bottom         weight: 0.045, IoU: 0.947 
+class bolt           weight: 0.006, IoU: 0.628 
+
+2021-08-14 13:32:24,007 - Model - INFO - Eval mean loss: 0.073830
+2021-08-14 13:32:24,007 - Model - INFO - Eval accuracy: 0.988188
+2021-08-14 13:32:24,007 - Model - INFO - Best mIoU: 0.905633
+2021-08-14 13:32:24,008 - Model - INFO - **** Epoch 33 (33/100) ****
+2021-08-14 13:32:24,008 - Model - INFO - Learning rate:0.000343
+2021-08-14 13:48:18,351 - Model - INFO - Training mean loss: 0.035866
+2021-08-14 13:48:18,351 - Model - INFO - Training accuracy: 0.992640
+2021-08-14 13:48:18,920 - Model - INFO - ---- EPOCH 033 EVALUATION ----
+2021-08-14 13:53:03,466 - Model - INFO - eval mean loss: 0.040868
+2021-08-14 13:53:03,467 - Model - INFO - eval point avg class IoU: 0.898498
+2021-08-14 13:53:03,467 - Model - INFO - eval point accuracy: 0.991676
+2021-08-14 13:53:03,467 - Model - INFO - eval point avg class acc: 0.966770
+2021-08-14 13:53:03,468 - Model - INFO - eval point avg class IoU without background: 0.878785
+2021-08-14 13:53:03,468 - Model - INFO - eval point accuracy without background: 0.971253
+2021-08-14 13:53:03,468 - Model - INFO - eval point avg class acc without background: 0.960571
+2021-08-14 13:53:03,468 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.913 
+class charger        weight: 0.012, IoU: 0.916 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.642 
+
+2021-08-14 13:53:03,469 - Model - INFO - Eval mean loss: 0.040868
+2021-08-14 13:53:03,469 - Model - INFO - Eval accuracy: 0.991676
+2021-08-14 13:53:03,469 - Model - INFO - Best mIoU: 0.905633
+2021-08-14 13:53:03,470 - Model - INFO - **** Epoch 34 (34/100) ****
+2021-08-14 13:53:03,470 - Model - INFO - Learning rate:0.000343
+2021-08-14 14:08:50,361 - Model - INFO - Training mean loss: 0.034829
+2021-08-14 14:08:50,361 - Model - INFO - Training accuracy: 0.992819
+2021-08-14 14:08:50,962 - Model - INFO - ---- EPOCH 034 EVALUATION ----
+2021-08-14 14:13:37,414 - Model - INFO - eval mean loss: 0.038103
+2021-08-14 14:13:37,414 - Model - INFO - eval point avg class IoU: 0.901492
+2021-08-14 14:13:37,414 - Model - INFO - eval point accuracy: 0.991968
+2021-08-14 14:13:37,414 - Model - INFO - eval point avg class acc: 0.971192
+2021-08-14 14:13:37,415 - Model - INFO - eval point avg class IoU without background: 0.882313
+2021-08-14 14:13:37,415 - Model - INFO - eval point accuracy without background: 0.971056
+2021-08-14 14:13:37,415 - Model - INFO - eval point avg class acc without background: 0.965790
+2021-08-14 14:13:37,415 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.965 
+class gearContainer  weight: 0.038, IoU: 0.911 
+class charger        weight: 0.012, IoU: 0.932 
+class bottom         weight: 0.045, IoU: 0.961 
+class bolt           weight: 0.006, IoU: 0.643 
+
+2021-08-14 14:13:37,416 - Model - INFO - Eval mean loss: 0.038103
+2021-08-14 14:13:37,416 - Model - INFO - Eval accuracy: 0.991968
+2021-08-14 14:13:37,416 - Model - INFO - Best mIoU: 0.905633
+2021-08-14 14:13:37,417 - Model - INFO - **** Epoch 35 (35/100) ****
+2021-08-14 14:13:37,417 - Model - INFO - Learning rate:0.000343
+2021-08-14 14:29:24,213 - Model - INFO - Training mean loss: 0.035045
+2021-08-14 14:29:24,213 - Model - INFO - Training accuracy: 0.992785
+2021-08-14 14:29:24,789 - Model - INFO - ---- EPOCH 035 EVALUATION ----
+2021-08-14 14:34:18,442 - Model - INFO - eval mean loss: 0.041108
+2021-08-14 14:34:18,442 - Model - INFO - eval point avg class IoU: 0.906185
+2021-08-14 14:34:18,442 - Model - INFO - eval point accuracy: 0.992122
+2021-08-14 14:34:18,443 - Model - INFO - eval point avg class acc: 0.968213
+2021-08-14 14:34:18,443 - Model - INFO - eval point avg class IoU without background: 0.888031
+2021-08-14 14:34:18,443 - Model - INFO - eval point accuracy without background: 0.974021
+2021-08-14 14:34:18,444 - Model - INFO - eval point avg class acc without background: 0.962352
+2021-08-14 14:34:18,444 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.905 
+class charger        weight: 0.012, IoU: 0.917 
+class bottom         weight: 0.045, IoU: 0.960 
+class bolt           weight: 0.006, IoU: 0.689 
+
+2021-08-14 14:34:18,444 - Model - INFO - Eval mean loss: 0.041108
+2021-08-14 14:34:18,445 - Model - INFO - Eval accuracy: 0.992122
+2021-08-14 14:34:18,445 - Model - INFO - Save model...
+2021-08-14 14:34:18,445 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 14:34:18,512 - Model - INFO - Saving model....
+2021-08-14 14:34:18,512 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 14:34:18,513 - Model - INFO - **** Epoch 36 (36/100) ****
+2021-08-14 14:34:18,513 - Model - INFO - Learning rate:0.000343
+2021-08-14 14:50:07,009 - Model - INFO - Training mean loss: 0.035103
+2021-08-14 14:50:07,010 - Model - INFO - Training accuracy: 0.992794
+2021-08-14 14:50:07,011 - Model - INFO - Save model...
+2021-08-14 14:50:07,011 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 14:50:07,062 - Model - INFO - Saving model....
+2021-08-14 14:50:07,621 - Model - INFO - ---- EPOCH 036 EVALUATION ----
+2021-08-14 14:54:54,482 - Model - INFO - eval mean loss: 0.038055
+2021-08-14 14:54:54,483 - Model - INFO - eval point avg class IoU: 0.900609
+2021-08-14 14:54:54,483 - Model - INFO - eval point accuracy: 0.991796
+2021-08-14 14:54:54,483 - Model - INFO - eval point avg class acc: 0.972437
+2021-08-14 14:54:54,483 - Model - INFO - eval point avg class IoU without background: 0.881312
+2021-08-14 14:54:54,484 - Model - INFO - eval point accuracy without background: 0.972094
+2021-08-14 14:54:54,484 - Model - INFO - eval point avg class acc without background: 0.967391
+2021-08-14 14:54:54,484 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.963 
+class gearContainer  weight: 0.038, IoU: 0.915 
+class charger        weight: 0.012, IoU: 0.930 
+class bottom         weight: 0.045, IoU: 0.964 
+class bolt           weight: 0.006, IoU: 0.635 
+
+2021-08-14 14:54:54,484 - Model - INFO - Eval mean loss: 0.038055
+2021-08-14 14:54:54,485 - Model - INFO - Eval accuracy: 0.991796
+2021-08-14 14:54:54,485 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 14:54:54,486 - Model - INFO - **** Epoch 37 (37/100) ****
+2021-08-14 14:54:54,486 - Model - INFO - Learning rate:0.000343
+2021-08-14 15:10:40,716 - Model - INFO - Training mean loss: 0.034673
+2021-08-14 15:10:40,717 - Model - INFO - Training accuracy: 0.992881
+2021-08-14 15:10:41,271 - Model - INFO - ---- EPOCH 037 EVALUATION ----
+2021-08-14 15:15:27,827 - Model - INFO - eval mean loss: 0.040692
+2021-08-14 15:15:27,827 - Model - INFO - eval point avg class IoU: 0.896112
+2021-08-14 15:15:27,828 - Model - INFO - eval point accuracy: 0.991273
+2021-08-14 15:15:27,828 - Model - INFO - eval point avg class acc: 0.970339
+2021-08-14 15:15:27,828 - Model - INFO - eval point avg class IoU without background: 0.875957
+2021-08-14 15:15:27,828 - Model - INFO - eval point accuracy without background: 0.970478
+2021-08-14 15:15:27,828 - Model - INFO - eval point avg class acc without background: 0.964913
+2021-08-14 15:15:27,828 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.962 
+class gearContainer  weight: 0.038, IoU: 0.907 
+class charger        weight: 0.012, IoU: 0.918 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.635 
+
+2021-08-14 15:15:27,828 - Model - INFO - Eval mean loss: 0.040692
+2021-08-14 15:15:27,828 - Model - INFO - Eval accuracy: 0.991273
+2021-08-14 15:15:27,828 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 15:15:27,829 - Model - INFO - **** Epoch 38 (38/100) ****
+2021-08-14 15:15:27,829 - Model - INFO - Learning rate:0.000343
+2021-08-14 15:31:21,236 - Model - INFO - Training mean loss: 0.034946
+2021-08-14 15:31:21,237 - Model - INFO - Training accuracy: 0.992812
+2021-08-14 15:31:21,779 - Model - INFO - ---- EPOCH 038 EVALUATION ----
+2021-08-14 15:36:08,614 - Model - INFO - eval mean loss: 0.037936
+2021-08-14 15:36:08,614 - Model - INFO - eval point avg class IoU: 0.904370
+2021-08-14 15:36:08,615 - Model - INFO - eval point accuracy: 0.992387
+2021-08-14 15:36:08,615 - Model - INFO - eval point avg class acc: 0.971391
+2021-08-14 15:36:08,615 - Model - INFO - eval point avg class IoU without background: 0.885742
+2021-08-14 15:36:08,615 - Model - INFO - eval point accuracy without background: 0.972823
+2021-08-14 15:36:08,615 - Model - INFO - eval point avg class acc without background: 0.966026
+2021-08-14 15:36:08,615 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.968 
+class gearContainer  weight: 0.038, IoU: 0.914 
+class charger        weight: 0.012, IoU: 0.927 
+class bottom         weight: 0.045, IoU: 0.963 
+class bolt           weight: 0.006, IoU: 0.657 
+
+2021-08-14 15:36:08,616 - Model - INFO - Eval mean loss: 0.037936
+2021-08-14 15:36:08,616 - Model - INFO - Eval accuracy: 0.992387
+2021-08-14 15:36:08,616 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 15:36:08,617 - Model - INFO - **** Epoch 39 (39/100) ****
+2021-08-14 15:36:08,617 - Model - INFO - Learning rate:0.000343
+2021-08-14 15:51:54,915 - Model - INFO - Training mean loss: 0.034503
+2021-08-14 15:51:54,916 - Model - INFO - Training accuracy: 0.992913
+2021-08-14 15:51:55,449 - Model - INFO - ---- EPOCH 039 EVALUATION ----
+2021-08-14 15:56:43,249 - Model - INFO - eval mean loss: 0.039192
+2021-08-14 15:56:43,249 - Model - INFO - eval point avg class IoU: 0.906037
+2021-08-14 15:56:43,250 - Model - INFO - eval point accuracy: 0.992334
+2021-08-14 15:56:43,250 - Model - INFO - eval point avg class acc: 0.968832
+2021-08-14 15:56:43,250 - Model - INFO - eval point avg class IoU without background: 0.887765
+2021-08-14 15:56:43,250 - Model - INFO - eval point accuracy without background: 0.972725
+2021-08-14 15:56:43,250 - Model - INFO - eval point avg class acc without background: 0.962963
+2021-08-14 15:56:43,251 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.966 
+class gearContainer  weight: 0.038, IoU: 0.914 
+class charger        weight: 0.012, IoU: 0.929 
+class bottom         weight: 0.045, IoU: 0.962 
+class bolt           weight: 0.006, IoU: 0.668 
+
+2021-08-14 15:56:43,251 - Model - INFO - Eval mean loss: 0.039192
+2021-08-14 15:56:43,251 - Model - INFO - Eval accuracy: 0.992334
+2021-08-14 15:56:43,251 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 15:56:43,252 - Model - INFO - **** Epoch 40 (40/100) ****
+2021-08-14 15:56:43,253 - Model - INFO - Learning rate:0.000343
+2021-08-14 16:12:39,398 - Model - INFO - Training mean loss: 0.034719
+2021-08-14 16:12:39,398 - Model - INFO - Training accuracy: 0.992871
+2021-08-14 16:12:39,948 - Model - INFO - ---- EPOCH 040 EVALUATION ----
+2021-08-14 16:17:26,706 - Model - INFO - eval mean loss: 0.040715
+2021-08-14 16:17:26,707 - Model - INFO - eval point avg class IoU: 0.901436
+2021-08-14 16:17:26,707 - Model - INFO - eval point accuracy: 0.991815
+2021-08-14 16:17:26,707 - Model - INFO - eval point avg class acc: 0.968299
+2021-08-14 16:17:26,707 - Model - INFO - eval point avg class IoU without background: 0.882307
+2021-08-14 16:17:26,707 - Model - INFO - eval point accuracy without background: 0.972291
+2021-08-14 16:17:26,708 - Model - INFO - eval point avg class acc without background: 0.962432
+2021-08-14 16:17:26,708 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.912 
+class charger        weight: 0.012, IoU: 0.922 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.654 
+
+2021-08-14 16:17:26,708 - Model - INFO - Eval mean loss: 0.040715
+2021-08-14 16:17:26,708 - Model - INFO - Eval accuracy: 0.991815
+2021-08-14 16:17:26,708 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 16:17:26,709 - Model - INFO - **** Epoch 41 (41/100) ****
+2021-08-14 16:17:26,710 - Model - INFO - Learning rate:0.000240
+2021-08-14 16:33:13,314 - Model - INFO - Training mean loss: 0.032888
+2021-08-14 16:33:13,315 - Model - INFO - Training accuracy: 0.993242
+2021-08-14 16:33:13,316 - Model - INFO - Save model...
+2021-08-14 16:33:13,317 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 16:33:13,371 - Model - INFO - Saving model....
+2021-08-14 16:33:13,959 - Model - INFO - ---- EPOCH 041 EVALUATION ----
+2021-08-14 16:38:01,560 - Model - INFO - eval mean loss: 0.037412
+2021-08-14 16:38:01,561 - Model - INFO - eval point avg class IoU: 0.903957
+2021-08-14 16:38:01,561 - Model - INFO - eval point accuracy: 0.992179
+2021-08-14 16:38:01,561 - Model - INFO - eval point avg class acc: 0.972590
+2021-08-14 16:38:01,561 - Model - INFO - eval point avg class IoU without background: 0.885271
+2021-08-14 16:38:01,561 - Model - INFO - eval point accuracy without background: 0.972549
+2021-08-14 16:38:01,561 - Model - INFO - eval point avg class acc without background: 0.967503
+2021-08-14 16:38:01,562 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.771, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.968 
+class gearContainer  weight: 0.038, IoU: 0.911 
+class charger        weight: 0.012, IoU: 0.921 
+class bottom         weight: 0.045, IoU: 0.957 
+class bolt           weight: 0.006, IoU: 0.669 
+
+2021-08-14 16:38:01,562 - Model - INFO - Eval mean loss: 0.037412
+2021-08-14 16:38:01,562 - Model - INFO - Eval accuracy: 0.992179
+2021-08-14 16:38:01,562 - Model - INFO - Best mIoU: 0.906185
+2021-08-14 16:38:01,563 - Model - INFO - **** Epoch 42 (42/100) ****
+2021-08-14 16:38:01,564 - Model - INFO - Learning rate:0.000240
+2021-08-14 16:53:51,687 - Model - INFO - Training mean loss: 0.033191
+2021-08-14 16:53:51,688 - Model - INFO - Training accuracy: 0.993177
+2021-08-14 16:53:52,249 - Model - INFO - ---- EPOCH 042 EVALUATION ----
+2021-08-14 16:58:44,049 - Model - INFO - eval mean loss: 0.038825
+2021-08-14 16:58:44,050 - Model - INFO - eval point avg class IoU: 0.911281
+2021-08-14 16:58:44,050 - Model - INFO - eval point accuracy: 0.992584
+2021-08-14 16:58:44,050 - Model - INFO - eval point avg class acc: 0.968723
+2021-08-14 16:58:44,050 - Model - INFO - eval point avg class IoU without background: 0.894130
+2021-08-14 16:58:44,051 - Model - INFO - eval point accuracy without background: 0.976321
+2021-08-14 16:58:44,051 - Model - INFO - eval point avg class acc without background: 0.962982
+2021-08-14 16:58:44,051 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.916 
+class charger        weight: 0.012, IoU: 0.934 
+class bottom         weight: 0.045, IoU: 0.961 
+class bolt           weight: 0.006, IoU: 0.690 
+
+2021-08-14 16:58:44,052 - Model - INFO - Eval mean loss: 0.038825
+2021-08-14 16:58:44,052 - Model - INFO - Eval accuracy: 0.992584
+2021-08-14 16:58:44,052 - Model - INFO - Save model...
+2021-08-14 16:58:44,052 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 16:58:44,106 - Model - INFO - Saving model....
+2021-08-14 16:58:44,106 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 16:58:44,107 - Model - INFO - **** Epoch 43 (43/100) ****
+2021-08-14 16:58:44,107 - Model - INFO - Learning rate:0.000240
+2021-08-14 17:14:29,057 - Model - INFO - Training mean loss: 0.032679
+2021-08-14 17:14:29,057 - Model - INFO - Training accuracy: 0.993267
+2021-08-14 17:14:29,637 - Model - INFO - ---- EPOCH 043 EVALUATION ----
+2021-08-14 17:19:16,615 - Model - INFO - eval mean loss: 0.037632
+2021-08-14 17:19:16,615 - Model - INFO - eval point avg class IoU: 0.908038
+2021-08-14 17:19:16,615 - Model - INFO - eval point accuracy: 0.992459
+2021-08-14 17:19:16,616 - Model - INFO - eval point avg class acc: 0.970175
+2021-08-14 17:19:16,616 - Model - INFO - eval point avg class IoU without background: 0.890206
+2021-08-14 17:19:16,616 - Model - INFO - eval point accuracy without background: 0.974701
+2021-08-14 17:19:16,616 - Model - INFO - eval point avg class acc without background: 0.964660
+2021-08-14 17:19:16,616 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.968 
+class gearContainer  weight: 0.038, IoU: 0.918 
+class charger        weight: 0.012, IoU: 0.931 
+class bottom         weight: 0.045, IoU: 0.963 
+class bolt           weight: 0.006, IoU: 0.672 
+
+2021-08-14 17:19:16,617 - Model - INFO - Eval mean loss: 0.037632
+2021-08-14 17:19:16,617 - Model - INFO - Eval accuracy: 0.992459
+2021-08-14 17:19:16,617 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 17:19:16,618 - Model - INFO - **** Epoch 44 (44/100) ****
+2021-08-14 17:19:16,619 - Model - INFO - Learning rate:0.000240
+2021-08-14 17:35:04,244 - Model - INFO - Training mean loss: 0.032654
+2021-08-14 17:35:04,244 - Model - INFO - Training accuracy: 0.993285
+2021-08-14 17:35:04,795 - Model - INFO - ---- EPOCH 044 EVALUATION ----
+2021-08-14 17:39:52,850 - Model - INFO - eval mean loss: 0.037514
+2021-08-14 17:39:52,851 - Model - INFO - eval point avg class IoU: 0.909169
+2021-08-14 17:39:52,851 - Model - INFO - eval point accuracy: 0.992578
+2021-08-14 17:39:52,851 - Model - INFO - eval point avg class acc: 0.970405
+2021-08-14 17:39:52,851 - Model - INFO - eval point avg class IoU without background: 0.891542
+2021-08-14 17:39:52,852 - Model - INFO - eval point accuracy without background: 0.974657
+2021-08-14 17:39:52,852 - Model - INFO - eval point avg class acc without background: 0.964902
+2021-08-14 17:39:52,852 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.915 
+class charger        weight: 0.012, IoU: 0.933 
+class bottom         weight: 0.045, IoU: 0.962 
+class bolt           weight: 0.006, IoU: 0.679 
+
+2021-08-14 17:39:52,852 - Model - INFO - Eval mean loss: 0.037514
+2021-08-14 17:39:52,853 - Model - INFO - Eval accuracy: 0.992578
+2021-08-14 17:39:52,853 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 17:39:52,854 - Model - INFO - **** Epoch 45 (45/100) ****
+2021-08-14 17:39:52,854 - Model - INFO - Learning rate:0.000240
+2021-08-14 17:55:45,714 - Model - INFO - Training mean loss: 0.032681
+2021-08-14 17:55:45,715 - Model - INFO - Training accuracy: 0.993270
+2021-08-14 17:55:46,279 - Model - INFO - ---- EPOCH 045 EVALUATION ----
+2021-08-14 18:00:32,885 - Model - INFO - eval mean loss: 0.040913
+2021-08-14 18:00:32,885 - Model - INFO - eval point avg class IoU: 0.889745
+2021-08-14 18:00:32,885 - Model - INFO - eval point accuracy: 0.991027
+2021-08-14 18:00:32,885 - Model - INFO - eval point avg class acc: 0.972683
+2021-08-14 18:00:32,885 - Model - INFO - eval point avg class IoU without background: 0.868205
+2021-08-14 18:00:32,885 - Model - INFO - eval point accuracy without background: 0.966325
+2021-08-14 18:00:32,885 - Model - INFO - eval point avg class acc without background: 0.967542
+2021-08-14 18:00:32,885 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.958 
+class gearContainer  weight: 0.038, IoU: 0.915 
+class charger        weight: 0.012, IoU: 0.912 
+class bottom         weight: 0.045, IoU: 0.959 
+class bolt           weight: 0.006, IoU: 0.598 
+
+2021-08-14 18:00:32,885 - Model - INFO - Eval mean loss: 0.040913
+2021-08-14 18:00:32,886 - Model - INFO - Eval accuracy: 0.991027
+2021-08-14 18:00:32,886 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 18:00:32,886 - Model - INFO - **** Epoch 46 (46/100) ****
+2021-08-14 18:00:32,886 - Model - INFO - Learning rate:0.000240
+2021-08-14 18:16:17,472 - Model - INFO - Training mean loss: 0.032939
+2021-08-14 18:16:17,472 - Model - INFO - Training accuracy: 0.993229
+2021-08-14 18:16:17,473 - Model - INFO - Save model...
+2021-08-14 18:16:17,473 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 18:16:17,529 - Model - INFO - Saving model....
+2021-08-14 18:16:18,073 - Model - INFO - ---- EPOCH 046 EVALUATION ----
+2021-08-14 18:21:05,494 - Model - INFO - eval mean loss: 0.037886
+2021-08-14 18:21:05,495 - Model - INFO - eval point avg class IoU: 0.910613
+2021-08-14 18:21:05,495 - Model - INFO - eval point accuracy: 0.992660
+2021-08-14 18:21:05,495 - Model - INFO - eval point avg class acc: 0.970158
+2021-08-14 18:21:05,495 - Model - INFO - eval point avg class IoU without background: 0.893291
+2021-08-14 18:21:05,495 - Model - INFO - eval point accuracy without background: 0.975552
+2021-08-14 18:21:05,496 - Model - INFO - eval point avg class acc without background: 0.964637
+2021-08-14 18:21:05,496 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.918 
+class charger        weight: 0.012, IoU: 0.928 
+class bottom         weight: 0.045, IoU: 0.964 
+class bolt           weight: 0.006, IoU: 0.688 
+
+2021-08-14 18:21:05,496 - Model - INFO - Eval mean loss: 0.037886
+2021-08-14 18:21:05,496 - Model - INFO - Eval accuracy: 0.992660
+2021-08-14 18:21:05,496 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 18:21:05,498 - Model - INFO - **** Epoch 47 (47/100) ****
+2021-08-14 18:21:05,498 - Model - INFO - Learning rate:0.000240
+2021-08-14 18:36:57,448 - Model - INFO - Training mean loss: 0.032414
+2021-08-14 18:36:57,449 - Model - INFO - Training accuracy: 0.993331
+2021-08-14 18:36:58,025 - Model - INFO - ---- EPOCH 047 EVALUATION ----
+2021-08-14 18:41:43,764 - Model - INFO - eval mean loss: 0.041055
+2021-08-14 18:41:43,764 - Model - INFO - eval point avg class IoU: 0.904745
+2021-08-14 18:41:43,764 - Model - INFO - eval point accuracy: 0.992153
+2021-08-14 18:41:43,765 - Model - INFO - eval point avg class acc: 0.968033
+2021-08-14 18:41:43,765 - Model - INFO - eval point avg class IoU without background: 0.886244
+2021-08-14 18:41:43,765 - Model - INFO - eval point accuracy without background: 0.972087
+2021-08-14 18:41:43,765 - Model - INFO - eval point avg class acc without background: 0.962013
+2021-08-14 18:41:43,765 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.967 
+class gearContainer  weight: 0.038, IoU: 0.912 
+class charger        weight: 0.012, IoU: 0.927 
+class bottom         weight: 0.045, IoU: 0.957 
+class bolt           weight: 0.006, IoU: 0.669 
+
+2021-08-14 18:41:43,766 - Model - INFO - Eval mean loss: 0.041055
+2021-08-14 18:41:43,766 - Model - INFO - Eval accuracy: 0.992153
+2021-08-14 18:41:43,766 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 18:41:43,767 - Model - INFO - **** Epoch 48 (48/100) ****
+2021-08-14 18:41:43,768 - Model - INFO - Learning rate:0.000240
+2021-08-14 18:57:27,870 - Model - INFO - Training mean loss: 0.033076
+2021-08-14 18:57:27,870 - Model - INFO - Training accuracy: 0.993204
+2021-08-14 18:57:28,407 - Model - INFO - ---- EPOCH 048 EVALUATION ----
+2021-08-14 19:02:15,065 - Model - INFO - eval mean loss: 0.041629
+2021-08-14 19:02:15,066 - Model - INFO - eval point avg class IoU: 0.900060
+2021-08-14 19:02:15,066 - Model - INFO - eval point accuracy: 0.991526
+2021-08-14 19:02:15,066 - Model - INFO - eval point avg class acc: 0.970134
+2021-08-14 19:02:15,066 - Model - INFO - eval point avg class IoU without background: 0.880690
+2021-08-14 19:02:15,066 - Model - INFO - eval point accuracy without background: 0.970964
+2021-08-14 19:02:15,067 - Model - INFO - eval point avg class acc without background: 0.964629
+2021-08-14 19:02:15,067 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.964 
+class gearContainer  weight: 0.038, IoU: 0.909 
+class charger        weight: 0.012, IoU: 0.917 
+class bottom         weight: 0.045, IoU: 0.956 
+class bolt           weight: 0.006, IoU: 0.658 
+
+2021-08-14 19:02:15,067 - Model - INFO - Eval mean loss: 0.041629
+2021-08-14 19:02:15,068 - Model - INFO - Eval accuracy: 0.991526
+2021-08-14 19:02:15,068 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 19:02:15,069 - Model - INFO - **** Epoch 49 (49/100) ****
+2021-08-14 19:02:15,069 - Model - INFO - Learning rate:0.000240
+2021-08-14 19:18:05,561 - Model - INFO - Training mean loss: 0.032414
+2021-08-14 19:18:05,562 - Model - INFO - Training accuracy: 0.993328
+2021-08-14 19:18:06,096 - Model - INFO - ---- EPOCH 049 EVALUATION ----
+2021-08-14 19:22:53,216 - Model - INFO - eval mean loss: 0.036046
+2021-08-14 19:22:53,217 - Model - INFO - eval point avg class IoU: 0.907414
+2021-08-14 19:22:53,217 - Model - INFO - eval point accuracy: 0.992266
+2021-08-14 19:22:53,217 - Model - INFO - eval point avg class acc: 0.974330
+2021-08-14 19:22:53,217 - Model - INFO - eval point avg class IoU without background: 0.889485
+2021-08-14 19:22:53,217 - Model - INFO - eval point accuracy without background: 0.974824
+2021-08-14 19:22:53,218 - Model - INFO - eval point avg class acc without background: 0.969702
+2021-08-14 19:22:53,218 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.967 
+class gearContainer  weight: 0.038, IoU: 0.916 
+class charger        weight: 0.012, IoU: 0.926 
+class bottom         weight: 0.045, IoU: 0.963 
+class bolt           weight: 0.006, IoU: 0.676 
+
+2021-08-14 19:22:53,218 - Model - INFO - Eval mean loss: 0.036046
+2021-08-14 19:22:53,218 - Model - INFO - Eval accuracy: 0.992266
+2021-08-14 19:22:53,219 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 19:22:53,219 - Model - INFO - **** Epoch 50 (50/100) ****
+2021-08-14 19:22:53,220 - Model - INFO - Learning rate:0.000240
+2021-08-14 19:38:34,727 - Model - INFO - Training mean loss: 0.032322
+2021-08-14 19:38:34,728 - Model - INFO - Training accuracy: 0.993322
+2021-08-14 19:38:35,272 - Model - INFO - ---- EPOCH 050 EVALUATION ----
+2021-08-14 19:43:21,959 - Model - INFO - eval mean loss: 0.037420
+2021-08-14 19:43:21,959 - Model - INFO - eval point avg class IoU: 0.903933
+2021-08-14 19:43:21,960 - Model - INFO - eval point accuracy: 0.992228
+2021-08-14 19:43:21,960 - Model - INFO - eval point avg class acc: 0.972447
+2021-08-14 19:43:21,960 - Model - INFO - eval point avg class IoU without background: 0.885243
+2021-08-14 19:43:21,960 - Model - INFO - eval point accuracy without background: 0.971225
+2021-08-14 19:43:21,960 - Model - INFO - eval point avg class acc without background: 0.967239
+2021-08-14 19:43:21,961 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.965 
+class gearContainer  weight: 0.038, IoU: 0.917 
+class charger        weight: 0.012, IoU: 0.932 
+class bottom         weight: 0.045, IoU: 0.964 
+class bolt           weight: 0.006, IoU: 0.648 
+
+2021-08-14 19:43:21,961 - Model - INFO - Eval mean loss: 0.037420
+2021-08-14 19:43:21,961 - Model - INFO - Eval accuracy: 0.992228
+2021-08-14 19:43:21,961 - Model - INFO - Best mIoU: 0.911281
+2021-08-14 19:43:21,962 - Model - INFO - **** Epoch 51 (51/100) ****
+2021-08-14 19:43:21,963 - Model - INFO - Learning rate:0.000168
+2021-08-14 19:59:05,659 - Model - INFO - Training mean loss: 0.031207
+2021-08-14 19:59:05,659 - Model - INFO - Training accuracy: 0.993580
+2021-08-14 19:59:05,667 - Model - INFO - Save model...
+2021-08-14 19:59:05,668 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 19:59:05,720 - Model - INFO - Saving model....
+2021-08-14 19:59:06,247 - Model - INFO - ---- EPOCH 051 EVALUATION ----
+2021-08-14 20:04:01,243 - Model - INFO - eval mean loss: 0.034357
+2021-08-14 20:04:01,243 - Model - INFO - eval point avg class IoU: 0.912199
+2021-08-14 20:04:01,244 - Model - INFO - eval point accuracy: 0.993006
+2021-08-14 20:04:01,244 - Model - INFO - eval point avg class acc: 0.974308
+2021-08-14 20:04:01,244 - Model - INFO - eval point avg class IoU without background: 0.895098
+2021-08-14 20:04:01,244 - Model - INFO - eval point accuracy without background: 0.974930
+2021-08-14 20:04:01,244 - Model - INFO - eval point avg class acc without background: 0.969491
+2021-08-14 20:04:01,244 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.937 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.683 
+
+2021-08-14 20:04:01,245 - Model - INFO - Eval mean loss: 0.034357
+2021-08-14 20:04:01,245 - Model - INFO - Eval accuracy: 0.993006
+2021-08-14 20:04:01,245 - Model - INFO - Save model...
+2021-08-14 20:04:01,245 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 20:04:01,297 - Model - INFO - Saving model....
+2021-08-14 20:04:01,297 - Model - INFO - Best mIoU: 0.912199
+2021-08-14 20:04:01,298 - Model - INFO - **** Epoch 52 (52/100) ****
+2021-08-14 20:04:01,298 - Model - INFO - Learning rate:0.000168
+2021-08-14 20:19:42,470 - Model - INFO - Training mean loss: 0.031064
+2021-08-14 20:19:42,471 - Model - INFO - Training accuracy: 0.993578
+2021-08-14 20:19:43,050 - Model - INFO - ---- EPOCH 052 EVALUATION ----
+2021-08-14 20:24:30,662 - Model - INFO - eval mean loss: 0.035284
+2021-08-14 20:24:30,662 - Model - INFO - eval point avg class IoU: 0.913111
+2021-08-14 20:24:30,662 - Model - INFO - eval point accuracy: 0.993081
+2021-08-14 20:24:30,663 - Model - INFO - eval point avg class acc: 0.971855
+2021-08-14 20:24:30,663 - Model - INFO - eval point avg class IoU without background: 0.896206
+2021-08-14 20:24:30,663 - Model - INFO - eval point accuracy without background: 0.975592
+2021-08-14 20:24:30,663 - Model - INFO - eval point avg class acc without background: 0.966568
+2021-08-14 20:24:30,663 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.682 
+
+2021-08-14 20:24:30,664 - Model - INFO - Eval mean loss: 0.035284
+2021-08-14 20:24:30,664 - Model - INFO - Eval accuracy: 0.993081
+2021-08-14 20:24:30,664 - Model - INFO - Save model...
+2021-08-14 20:24:30,664 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 20:24:30,717 - Model - INFO - Saving model....
+2021-08-14 20:24:30,717 - Model - INFO - Best mIoU: 0.913111
+2021-08-14 20:24:30,718 - Model - INFO - **** Epoch 53 (53/100) ****
+2021-08-14 20:24:30,718 - Model - INFO - Learning rate:0.000168
+2021-08-14 20:40:11,400 - Model - INFO - Training mean loss: 0.031122
+2021-08-14 20:40:11,400 - Model - INFO - Training accuracy: 0.993572
+2021-08-14 20:40:12,001 - Model - INFO - ---- EPOCH 053 EVALUATION ----
+2021-08-14 20:44:57,029 - Model - INFO - eval mean loss: 0.035244
+2021-08-14 20:44:57,030 - Model - INFO - eval point avg class IoU: 0.909386
+2021-08-14 20:44:57,030 - Model - INFO - eval point accuracy: 0.992744
+2021-08-14 20:44:57,030 - Model - INFO - eval point avg class acc: 0.973341
+2021-08-14 20:44:57,030 - Model - INFO - eval point avg class IoU without background: 0.891748
+2021-08-14 20:44:57,031 - Model - INFO - eval point accuracy without background: 0.974234
+2021-08-14 20:44:57,031 - Model - INFO - eval point avg class acc without background: 0.968357
+2021-08-14 20:44:57,031 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.968 
+class gearContainer  weight: 0.038, IoU: 0.922 
+class charger        weight: 0.012, IoU: 0.938 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.665 
+
+2021-08-14 20:44:57,031 - Model - INFO - Eval mean loss: 0.035244
+2021-08-14 20:44:57,031 - Model - INFO - Eval accuracy: 0.992744
+2021-08-14 20:44:57,031 - Model - INFO - Best mIoU: 0.913111
+2021-08-14 20:44:57,032 - Model - INFO - **** Epoch 54 (54/100) ****
+2021-08-14 20:44:57,033 - Model - INFO - Learning rate:0.000168
+2021-08-14 21:00:48,932 - Model - INFO - Training mean loss: 0.030950
+2021-08-14 21:00:48,933 - Model - INFO - Training accuracy: 0.993609
+2021-08-14 21:00:49,525 - Model - INFO - ---- EPOCH 054 EVALUATION ----
+2021-08-14 21:05:34,806 - Model - INFO - eval mean loss: 0.034913
+2021-08-14 21:05:34,806 - Model - INFO - eval point avg class IoU: 0.911155
+2021-08-14 21:05:34,807 - Model - INFO - eval point accuracy: 0.992894
+2021-08-14 21:05:34,807 - Model - INFO - eval point avg class acc: 0.973976
+2021-08-14 21:05:34,807 - Model - INFO - eval point avg class IoU without background: 0.893872
+2021-08-14 21:05:34,807 - Model - INFO - eval point accuracy without background: 0.975356
+2021-08-14 21:05:34,807 - Model - INFO - eval point avg class acc without background: 0.969146
+2021-08-14 21:05:34,807 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.922 
+class charger        weight: 0.012, IoU: 0.931 
+class bottom         weight: 0.045, IoU: 0.965 
+class bolt           weight: 0.006, IoU: 0.683 
+
+2021-08-14 21:05:34,808 - Model - INFO - Eval mean loss: 0.034913
+2021-08-14 21:05:34,808 - Model - INFO - Eval accuracy: 0.992894
+2021-08-14 21:05:34,808 - Model - INFO - Best mIoU: 0.913111
+2021-08-14 21:05:34,809 - Model - INFO - **** Epoch 55 (55/100) ****
+2021-08-14 21:05:34,809 - Model - INFO - Learning rate:0.000168
+2021-08-14 21:21:18,837 - Model - INFO - Training mean loss: 0.030971
+2021-08-14 21:21:18,837 - Model - INFO - Training accuracy: 0.993598
+2021-08-14 21:21:19,419 - Model - INFO - ---- EPOCH 055 EVALUATION ----
+2021-08-14 21:26:06,052 - Model - INFO - eval mean loss: 0.038224
+2021-08-14 21:26:06,053 - Model - INFO - eval point avg class IoU: 0.908094
+2021-08-14 21:26:06,053 - Model - INFO - eval point accuracy: 0.992537
+2021-08-14 21:26:06,053 - Model - INFO - eval point avg class acc: 0.970165
+2021-08-14 21:26:06,053 - Model - INFO - eval point avg class IoU without background: 0.890249
+2021-08-14 21:26:06,053 - Model - INFO - eval point accuracy without background: 0.974230
+2021-08-14 21:26:06,053 - Model - INFO - eval point avg class acc without background: 0.964599
+2021-08-14 21:26:06,054 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.967 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.935 
+class bottom         weight: 0.045, IoU: 0.965 
+class bolt           weight: 0.006, IoU: 0.665 
+
+2021-08-14 21:26:06,054 - Model - INFO - Eval mean loss: 0.038224
+2021-08-14 21:26:06,054 - Model - INFO - Eval accuracy: 0.992537
+2021-08-14 21:26:06,054 - Model - INFO - Best mIoU: 0.913111
+2021-08-14 21:26:06,055 - Model - INFO - **** Epoch 56 (56/100) ****
+2021-08-14 21:26:06,055 - Model - INFO - Learning rate:0.000168
+2021-08-14 21:41:58,626 - Model - INFO - Training mean loss: 0.031213
+2021-08-14 21:41:58,627 - Model - INFO - Training accuracy: 0.993577
+2021-08-14 21:41:58,628 - Model - INFO - Save model...
+2021-08-14 21:41:58,629 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 21:41:58,695 - Model - INFO - Saving model....
+2021-08-14 21:41:59,259 - Model - INFO - ---- EPOCH 056 EVALUATION ----
+2021-08-14 21:46:45,927 - Model - INFO - eval mean loss: 0.036699
+2021-08-14 21:46:45,928 - Model - INFO - eval point avg class IoU: 0.913640
+2021-08-14 21:46:45,928 - Model - INFO - eval point accuracy: 0.992906
+2021-08-14 21:46:45,928 - Model - INFO - eval point avg class acc: 0.971150
+2021-08-14 21:46:45,928 - Model - INFO - eval point avg class IoU without background: 0.896878
+2021-08-14 21:46:45,928 - Model - INFO - eval point accuracy without background: 0.975849
+2021-08-14 21:46:45,928 - Model - INFO - eval point avg class acc without background: 0.965781
+2021-08-14 21:46:45,928 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.934 
+class bottom         weight: 0.045, IoU: 0.964 
+class bolt           weight: 0.006, IoU: 0.698 
+
+2021-08-14 21:46:45,929 - Model - INFO - Eval mean loss: 0.036699
+2021-08-14 21:46:45,929 - Model - INFO - Eval accuracy: 0.992906
+2021-08-14 21:46:45,929 - Model - INFO - Save model...
+2021-08-14 21:46:45,929 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 21:46:45,972 - Model - INFO - Saving model....
+2021-08-14 21:46:45,972 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 21:46:45,973 - Model - INFO - **** Epoch 57 (57/100) ****
+2021-08-14 21:46:45,974 - Model - INFO - Learning rate:0.000168
+2021-08-14 22:02:23,876 - Model - INFO - Training mean loss: 0.030829
+2021-08-14 22:02:23,877 - Model - INFO - Training accuracy: 0.993630
+2021-08-14 22:02:24,380 - Model - INFO - ---- EPOCH 057 EVALUATION ----
+2021-08-14 22:07:10,330 - Model - INFO - eval mean loss: 0.035240
+2021-08-14 22:07:10,330 - Model - INFO - eval point avg class IoU: 0.912173
+2021-08-14 22:07:10,330 - Model - INFO - eval point accuracy: 0.992999
+2021-08-14 22:07:10,330 - Model - INFO - eval point avg class acc: 0.973420
+2021-08-14 22:07:10,330 - Model - INFO - eval point avg class IoU without background: 0.895084
+2021-08-14 22:07:10,331 - Model - INFO - eval point accuracy without background: 0.975202
+2021-08-14 22:07:10,331 - Model - INFO - eval point avg class acc without background: 0.968443
+2021-08-14 22:07:10,331 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.936 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.684 
+
+2021-08-14 22:07:10,332 - Model - INFO - Eval mean loss: 0.035240
+2021-08-14 22:07:10,332 - Model - INFO - Eval accuracy: 0.992999
+2021-08-14 22:07:10,332 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 22:07:10,333 - Model - INFO - **** Epoch 58 (58/100) ****
+2021-08-14 22:07:10,333 - Model - INFO - Learning rate:0.000168
+2021-08-14 22:23:02,107 - Model - INFO - Training mean loss: 0.030855
+2021-08-14 22:23:02,108 - Model - INFO - Training accuracy: 0.993633
+2021-08-14 22:23:02,612 - Model - INFO - ---- EPOCH 058 EVALUATION ----
+2021-08-14 22:27:46,989 - Model - INFO - eval mean loss: 0.036796
+2021-08-14 22:27:46,989 - Model - INFO - eval point avg class IoU: 0.908875
+2021-08-14 22:27:46,989 - Model - INFO - eval point accuracy: 0.992697
+2021-08-14 22:27:46,990 - Model - INFO - eval point avg class acc: 0.972334
+2021-08-14 22:27:46,990 - Model - INFO - eval point avg class IoU without background: 0.891136
+2021-08-14 22:27:46,990 - Model - INFO - eval point accuracy without background: 0.973655
+2021-08-14 22:27:46,990 - Model - INFO - eval point avg class acc without background: 0.967126
+2021-08-14 22:27:46,990 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.920 
+class charger        weight: 0.012, IoU: 0.925 
+class bottom         weight: 0.045, IoU: 0.961 
+class bolt           weight: 0.006, IoU: 0.681 
+
+2021-08-14 22:27:46,990 - Model - INFO - Eval mean loss: 0.036796
+2021-08-14 22:27:46,991 - Model - INFO - Eval accuracy: 0.992697
+2021-08-14 22:27:46,991 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 22:27:46,991 - Model - INFO - **** Epoch 59 (59/100) ****
+2021-08-14 22:27:46,992 - Model - INFO - Learning rate:0.000168
+2021-08-14 22:43:32,759 - Model - INFO - Training mean loss: 0.030887
+2021-08-14 22:43:32,760 - Model - INFO - Training accuracy: 0.993618
+2021-08-14 22:43:33,317 - Model - INFO - ---- EPOCH 059 EVALUATION ----
+2021-08-14 22:48:20,658 - Model - INFO - eval mean loss: 0.053495
+2021-08-14 22:48:20,658 - Model - INFO - eval point avg class IoU: 0.884869
+2021-08-14 22:48:20,658 - Model - INFO - eval point accuracy: 0.988007
+2021-08-14 22:48:20,659 - Model - INFO - eval point avg class acc: 0.969642
+2021-08-14 22:48:20,659 - Model - INFO - eval point avg class IoU without background: 0.863315
+2021-08-14 22:48:20,659 - Model - INFO - eval point accuracy without background: 0.970528
+2021-08-14 22:48:20,659 - Model - INFO - eval point avg class acc without background: 0.964927
+2021-08-14 22:48:20,659 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.993 
+class cover          weight: 0.128, IoU: 0.947 
+class gearContainer  weight: 0.038, IoU: 0.889 
+class charger        weight: 0.012, IoU: 0.923 
+class bottom         weight: 0.045, IoU: 0.961 
+class bolt           weight: 0.006, IoU: 0.597 
+
+2021-08-14 22:48:20,660 - Model - INFO - Eval mean loss: 0.053495
+2021-08-14 22:48:20,660 - Model - INFO - Eval accuracy: 0.988007
+2021-08-14 22:48:20,660 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 22:48:20,661 - Model - INFO - **** Epoch 60 (60/100) ****
+2021-08-14 22:48:20,662 - Model - INFO - Learning rate:0.000168
+2021-08-14 23:04:01,959 - Model - INFO - Training mean loss: 0.030789
+2021-08-14 23:04:01,959 - Model - INFO - Training accuracy: 0.993640
+2021-08-14 23:04:02,471 - Model - INFO - ---- EPOCH 060 EVALUATION ----
+2021-08-14 23:08:55,766 - Model - INFO - eval mean loss: 0.035219
+2021-08-14 23:08:55,766 - Model - INFO - eval point avg class IoU: 0.909173
+2021-08-14 23:08:55,766 - Model - INFO - eval point accuracy: 0.992763
+2021-08-14 23:08:55,766 - Model - INFO - eval point avg class acc: 0.974295
+2021-08-14 23:08:55,767 - Model - INFO - eval point avg class IoU without background: 0.891499
+2021-08-14 23:08:55,767 - Model - INFO - eval point accuracy without background: 0.974705
+2021-08-14 23:08:55,767 - Model - INFO - eval point avg class acc without background: 0.969525
+2021-08-14 23:08:55,767 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.929 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.674 
+
+2021-08-14 23:08:55,768 - Model - INFO - Eval mean loss: 0.035219
+2021-08-14 23:08:55,768 - Model - INFO - Eval accuracy: 0.992763
+2021-08-14 23:08:55,768 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 23:08:55,769 - Model - INFO - **** Epoch 61 (61/100) ****
+2021-08-14 23:08:55,769 - Model - INFO - Learning rate:0.000118
+2021-08-14 23:24:37,190 - Model - INFO - Training mean loss: 0.029924
+2021-08-14 23:24:37,191 - Model - INFO - Training accuracy: 0.993808
+2021-08-14 23:24:37,192 - Model - INFO - Save model...
+2021-08-14 23:24:37,192 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-14 23:24:37,245 - Model - INFO - Saving model....
+2021-08-14 23:24:37,792 - Model - INFO - ---- EPOCH 061 EVALUATION ----
+2021-08-14 23:29:23,455 - Model - INFO - eval mean loss: 0.033497
+2021-08-14 23:29:23,455 - Model - INFO - eval point avg class IoU: 0.912104
+2021-08-14 23:29:23,455 - Model - INFO - eval point accuracy: 0.993015
+2021-08-14 23:29:23,456 - Model - INFO - eval point avg class acc: 0.975528
+2021-08-14 23:29:23,456 - Model - INFO - eval point avg class IoU without background: 0.894996
+2021-08-14 23:29:23,456 - Model - INFO - eval point accuracy without background: 0.975574
+2021-08-14 23:29:23,456 - Model - INFO - eval point avg class acc without background: 0.970992
+2021-08-14 23:29:23,456 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.675 
+
+2021-08-14 23:29:23,457 - Model - INFO - Eval mean loss: 0.033497
+2021-08-14 23:29:23,457 - Model - INFO - Eval accuracy: 0.993015
+2021-08-14 23:29:23,457 - Model - INFO - Best mIoU: 0.913640
+2021-08-14 23:29:23,458 - Model - INFO - **** Epoch 62 (62/100) ****
+2021-08-14 23:29:23,459 - Model - INFO - Learning rate:0.000118
+2021-08-14 23:45:05,984 - Model - INFO - Training mean loss: 0.029717
+2021-08-14 23:45:05,985 - Model - INFO - Training accuracy: 0.993857
+2021-08-14 23:45:06,528 - Model - INFO - ---- EPOCH 062 EVALUATION ----
+2021-08-14 23:49:53,295 - Model - INFO - eval mean loss: 0.034060
+2021-08-14 23:49:53,295 - Model - INFO - eval point avg class IoU: 0.916153
+2021-08-14 23:49:53,295 - Model - INFO - eval point accuracy: 0.993285
+2021-08-14 23:49:53,296 - Model - INFO - eval point avg class acc: 0.974062
+2021-08-14 23:49:53,296 - Model - INFO - eval point avg class IoU without background: 0.899850
+2021-08-14 23:49:53,296 - Model - INFO - eval point accuracy without background: 0.976594
+2021-08-14 23:49:53,296 - Model - INFO - eval point avg class acc without background: 0.969222
+2021-08-14 23:49:53,296 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.924 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.698 
+
+2021-08-14 23:49:53,296 - Model - INFO - Eval mean loss: 0.034060
+2021-08-14 23:49:53,297 - Model - INFO - Eval accuracy: 0.993285
+2021-08-14 23:49:53,297 - Model - INFO - Save model...
+2021-08-14 23:49:53,297 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-14 23:49:53,347 - Model - INFO - Saving model....
+2021-08-14 23:49:53,347 - Model - INFO - Best mIoU: 0.916153
+2021-08-14 23:49:53,348 - Model - INFO - **** Epoch 63 (63/100) ****
+2021-08-14 23:49:53,348 - Model - INFO - Learning rate:0.000118
+2021-08-15 00:05:43,549 - Model - INFO - Training mean loss: 0.030008
+2021-08-15 00:05:43,550 - Model - INFO - Training accuracy: 0.993794
+2021-08-15 00:05:44,084 - Model - INFO - ---- EPOCH 063 EVALUATION ----
+2021-08-15 00:10:31,317 - Model - INFO - eval mean loss: 0.033693
+2021-08-15 00:10:31,318 - Model - INFO - eval point avg class IoU: 0.915154
+2021-08-15 00:10:31,318 - Model - INFO - eval point accuracy: 0.993212
+2021-08-15 00:10:31,318 - Model - INFO - eval point avg class acc: 0.974958
+2021-08-15 00:10:31,318 - Model - INFO - eval point avg class IoU without background: 0.898640
+2021-08-15 00:10:31,318 - Model - INFO - eval point accuracy without background: 0.976039
+2021-08-15 00:10:31,318 - Model - INFO - eval point avg class acc without background: 0.970283
+2021-08-15 00:10:31,319 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.923 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.694 
+
+2021-08-15 00:10:31,319 - Model - INFO - Eval mean loss: 0.033693
+2021-08-15 00:10:31,319 - Model - INFO - Eval accuracy: 0.993212
+2021-08-15 00:10:31,319 - Model - INFO - Best mIoU: 0.916153
+2021-08-15 00:10:31,320 - Model - INFO - **** Epoch 64 (64/100) ****
+2021-08-15 00:10:31,320 - Model - INFO - Learning rate:0.000118
+2021-08-15 00:26:14,973 - Model - INFO - Training mean loss: 0.029678
+2021-08-15 00:26:14,973 - Model - INFO - Training accuracy: 0.993871
+2021-08-15 00:26:15,528 - Model - INFO - ---- EPOCH 064 EVALUATION ----
+2021-08-15 00:31:01,612 - Model - INFO - eval mean loss: 0.033970
+2021-08-15 00:31:01,613 - Model - INFO - eval point avg class IoU: 0.915818
+2021-08-15 00:31:01,613 - Model - INFO - eval point accuracy: 0.993102
+2021-08-15 00:31:01,613 - Model - INFO - eval point avg class acc: 0.974093
+2021-08-15 00:31:01,613 - Model - INFO - eval point avg class IoU without background: 0.899507
+2021-08-15 00:31:01,613 - Model - INFO - eval point accuracy without background: 0.977040
+2021-08-15 00:31:01,614 - Model - INFO - eval point avg class acc without background: 0.969333
+2021-08-15 00:31:01,614 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.923 
+class charger        weight: 0.012, IoU: 0.936 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.702 
+
+2021-08-15 00:31:01,614 - Model - INFO - Eval mean loss: 0.033970
+2021-08-15 00:31:01,615 - Model - INFO - Eval accuracy: 0.993102
+2021-08-15 00:31:01,615 - Model - INFO - Best mIoU: 0.916153
+2021-08-15 00:31:01,616 - Model - INFO - **** Epoch 65 (65/100) ****
+2021-08-15 00:31:01,617 - Model - INFO - Learning rate:0.000118
+2021-08-15 00:46:53,736 - Model - INFO - Training mean loss: 0.029698
+2021-08-15 00:46:53,736 - Model - INFO - Training accuracy: 0.993856
+2021-08-15 00:46:54,258 - Model - INFO - ---- EPOCH 065 EVALUATION ----
+2021-08-15 00:51:41,039 - Model - INFO - eval mean loss: 0.035125
+2021-08-15 00:51:41,040 - Model - INFO - eval point avg class IoU: 0.916272
+2021-08-15 00:51:41,040 - Model - INFO - eval point accuracy: 0.993136
+2021-08-15 00:51:41,040 - Model - INFO - eval point avg class acc: 0.973090
+2021-08-15 00:51:41,040 - Model - INFO - eval point avg class IoU without background: 0.900055
+2021-08-15 00:51:41,040 - Model - INFO - eval point accuracy without background: 0.977325
+2021-08-15 00:51:41,041 - Model - INFO - eval point avg class acc without background: 0.968138
+2021-08-15 00:51:41,041 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.924 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.701 
+
+2021-08-15 00:51:41,041 - Model - INFO - Eval mean loss: 0.035125
+2021-08-15 00:51:41,041 - Model - INFO - Eval accuracy: 0.993136
+2021-08-15 00:51:41,042 - Model - INFO - Save model...
+2021-08-15 00:51:41,042 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-15 00:51:41,098 - Model - INFO - Saving model....
+2021-08-15 00:51:41,098 - Model - INFO - Best mIoU: 0.916272
+2021-08-15 00:51:41,099 - Model - INFO - **** Epoch 66 (66/100) ****
+2021-08-15 00:51:41,099 - Model - INFO - Learning rate:0.000118
+2021-08-15 01:07:22,907 - Model - INFO - Training mean loss: 0.029585
+2021-08-15 01:07:22,907 - Model - INFO - Training accuracy: 0.993884
+2021-08-15 01:07:22,909 - Model - INFO - Save model...
+2021-08-15 01:07:22,909 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 01:07:22,964 - Model - INFO - Saving model....
+2021-08-15 01:07:23,489 - Model - INFO - ---- EPOCH 066 EVALUATION ----
+2021-08-15 01:12:10,095 - Model - INFO - eval mean loss: 0.035155
+2021-08-15 01:12:10,095 - Model - INFO - eval point avg class IoU: 0.912551
+2021-08-15 01:12:10,095 - Model - INFO - eval point accuracy: 0.992903
+2021-08-15 01:12:10,095 - Model - INFO - eval point avg class acc: 0.974034
+2021-08-15 01:12:10,096 - Model - INFO - eval point avg class IoU without background: 0.895578
+2021-08-15 01:12:10,096 - Model - INFO - eval point accuracy without background: 0.976116
+2021-08-15 01:12:10,096 - Model - INFO - eval point avg class acc without background: 0.969259
+2021-08-15 01:12:10,096 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.924 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.680 
+
+2021-08-15 01:12:10,096 - Model - INFO - Eval mean loss: 0.035155
+2021-08-15 01:12:10,096 - Model - INFO - Eval accuracy: 0.992903
+2021-08-15 01:12:10,096 - Model - INFO - Best mIoU: 0.916272
+2021-08-15 01:12:10,097 - Model - INFO - **** Epoch 67 (67/100) ****
+2021-08-15 01:12:10,097 - Model - INFO - Learning rate:0.000118
+2021-08-15 01:27:55,330 - Model - INFO - Training mean loss: 0.029624
+2021-08-15 01:27:55,330 - Model - INFO - Training accuracy: 0.993878
+2021-08-15 01:27:55,910 - Model - INFO - ---- EPOCH 067 EVALUATION ----
+2021-08-15 01:32:48,246 - Model - INFO - eval mean loss: 0.034238
+2021-08-15 01:32:48,247 - Model - INFO - eval point avg class IoU: 0.907186
+2021-08-15 01:32:48,247 - Model - INFO - eval point accuracy: 0.992619
+2021-08-15 01:32:48,247 - Model - INFO - eval point avg class acc: 0.976360
+2021-08-15 01:32:48,247 - Model - INFO - eval point avg class IoU without background: 0.889111
+2021-08-15 01:32:48,247 - Model - INFO - eval point accuracy without background: 0.974301
+2021-08-15 01:32:48,248 - Model - INFO - eval point avg class acc without background: 0.972015
+2021-08-15 01:32:48,248 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.968 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.927 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.665 
+
+2021-08-15 01:32:48,248 - Model - INFO - Eval mean loss: 0.034238
+2021-08-15 01:32:48,248 - Model - INFO - Eval accuracy: 0.992619
+2021-08-15 01:32:48,248 - Model - INFO - Best mIoU: 0.916272
+2021-08-15 01:32:48,250 - Model - INFO - **** Epoch 68 (68/100) ****
+2021-08-15 01:32:48,252 - Model - INFO - Learning rate:0.000118
+2021-08-15 01:48:30,754 - Model - INFO - Training mean loss: 0.029553
+2021-08-15 01:48:30,755 - Model - INFO - Training accuracy: 0.993891
+2021-08-15 01:48:31,305 - Model - INFO - ---- EPOCH 068 EVALUATION ----
+2021-08-15 01:53:18,394 - Model - INFO - eval mean loss: 0.034897
+2021-08-15 01:53:18,394 - Model - INFO - eval point avg class IoU: 0.913215
+2021-08-15 01:53:18,394 - Model - INFO - eval point accuracy: 0.993020
+2021-08-15 01:53:18,394 - Model - INFO - eval point avg class acc: 0.973943
+2021-08-15 01:53:18,394 - Model - INFO - eval point avg class IoU without background: 0.896342
+2021-08-15 01:53:18,394 - Model - INFO - eval point accuracy without background: 0.975699
+2021-08-15 01:53:18,394 - Model - INFO - eval point avg class acc without background: 0.969095
+2021-08-15 01:53:18,394 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.926 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.680 
+
+2021-08-15 01:53:18,394 - Model - INFO - Eval mean loss: 0.034897
+2021-08-15 01:53:18,394 - Model - INFO - Eval accuracy: 0.993020
+2021-08-15 01:53:18,394 - Model - INFO - Best mIoU: 0.916272
+2021-08-15 01:53:18,395 - Model - INFO - **** Epoch 69 (69/100) ****
+2021-08-15 01:53:18,395 - Model - INFO - Learning rate:0.000118
+2021-08-15 02:09:00,364 - Model - INFO - Training mean loss: 0.029609
+2021-08-15 02:09:00,364 - Model - INFO - Training accuracy: 0.993881
+2021-08-15 02:09:00,896 - Model - INFO - ---- EPOCH 069 EVALUATION ----
+2021-08-15 02:13:48,400 - Model - INFO - eval mean loss: 0.035559
+2021-08-15 02:13:48,401 - Model - INFO - eval point avg class IoU: 0.918138
+2021-08-15 02:13:48,401 - Model - INFO - eval point accuracy: 0.993436
+2021-08-15 02:13:48,401 - Model - INFO - eval point avg class acc: 0.971800
+2021-08-15 02:13:48,401 - Model - INFO - eval point avg class IoU without background: 0.902228
+2021-08-15 02:13:48,401 - Model - INFO - eval point accuracy without background: 0.976459
+2021-08-15 02:13:48,401 - Model - INFO - eval point avg class acc without background: 0.966460
+2021-08-15 02:13:48,402 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.938 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.709 
+
+2021-08-15 02:13:48,402 - Model - INFO - Eval mean loss: 0.035559
+2021-08-15 02:13:48,402 - Model - INFO - Eval accuracy: 0.993436
+2021-08-15 02:13:48,402 - Model - INFO - Save model...
+2021-08-15 02:13:48,402 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-15 02:13:48,451 - Model - INFO - Saving model....
+2021-08-15 02:13:48,451 - Model - INFO - Best mIoU: 0.918138
+2021-08-15 02:13:48,452 - Model - INFO - **** Epoch 70 (70/100) ****
+2021-08-15 02:13:48,452 - Model - INFO - Learning rate:0.000118
+2021-08-15 02:29:36,757 - Model - INFO - Training mean loss: 0.029494
+2021-08-15 02:29:36,758 - Model - INFO - Training accuracy: 0.993900
+2021-08-15 02:29:37,299 - Model - INFO - ---- EPOCH 070 EVALUATION ----
+2021-08-15 02:34:23,316 - Model - INFO - eval mean loss: 0.035364
+2021-08-15 02:34:23,317 - Model - INFO - eval point avg class IoU: 0.912736
+2021-08-15 02:34:23,317 - Model - INFO - eval point accuracy: 0.992797
+2021-08-15 02:34:23,317 - Model - INFO - eval point avg class acc: 0.974019
+2021-08-15 02:34:23,318 - Model - INFO - eval point avg class IoU without background: 0.895841
+2021-08-15 02:34:23,318 - Model - INFO - eval point accuracy without background: 0.976644
+2021-08-15 02:34:23,318 - Model - INFO - eval point avg class acc without background: 0.969301
+2021-08-15 02:34:23,318 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.997 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.966 
+class bolt           weight: 0.006, IoU: 0.685 
+
+2021-08-15 02:34:23,319 - Model - INFO - Eval mean loss: 0.035364
+2021-08-15 02:34:23,319 - Model - INFO - Eval accuracy: 0.992797
+2021-08-15 02:34:23,319 - Model - INFO - Best mIoU: 0.918138
+2021-08-15 02:34:23,320 - Model - INFO - **** Epoch 71 (71/100) ****
+2021-08-15 02:34:23,321 - Model - INFO - Learning rate:0.000082
+2021-08-15 02:50:07,172 - Model - INFO - Training mean loss: 0.028834
+2021-08-15 02:50:07,173 - Model - INFO - Training accuracy: 0.994032
+2021-08-15 02:50:07,174 - Model - INFO - Save model...
+2021-08-15 02:50:07,175 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 02:50:07,493 - Model - INFO - Saving model....
+2021-08-15 02:50:08,049 - Model - INFO - ---- EPOCH 071 EVALUATION ----
+2021-08-15 02:54:54,612 - Model - INFO - eval mean loss: 0.033416
+2021-08-15 02:54:54,612 - Model - INFO - eval point avg class IoU: 0.918092
+2021-08-15 02:54:54,612 - Model - INFO - eval point accuracy: 0.993539
+2021-08-15 02:54:54,613 - Model - INFO - eval point avg class acc: 0.973949
+2021-08-15 02:54:54,613 - Model - INFO - eval point avg class IoU without background: 0.902140
+2021-08-15 02:54:54,613 - Model - INFO - eval point accuracy without background: 0.976785
+2021-08-15 02:54:54,613 - Model - INFO - eval point avg class acc without background: 0.969032
+2021-08-15 02:54:54,613 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.706 
+
+2021-08-15 02:54:54,614 - Model - INFO - Eval mean loss: 0.033416
+2021-08-15 02:54:54,614 - Model - INFO - Eval accuracy: 0.993539
+2021-08-15 02:54:54,614 - Model - INFO - Best mIoU: 0.918138
+2021-08-15 02:54:54,620 - Model - INFO - **** Epoch 72 (72/100) ****
+2021-08-15 02:54:54,621 - Model - INFO - Learning rate:0.000082
+2021-08-15 03:10:46,162 - Model - INFO - Training mean loss: 0.028825
+2021-08-15 03:10:46,162 - Model - INFO - Training accuracy: 0.994042
+2021-08-15 03:10:46,712 - Model - INFO - ---- EPOCH 072 EVALUATION ----
+2021-08-15 03:15:34,591 - Model - INFO - eval mean loss: 0.032774
+2021-08-15 03:15:34,591 - Model - INFO - eval point avg class IoU: 0.918583
+2021-08-15 03:15:34,591 - Model - INFO - eval point accuracy: 0.993608
+2021-08-15 03:15:34,591 - Model - INFO - eval point avg class acc: 0.974838
+2021-08-15 03:15:34,591 - Model - INFO - eval point avg class IoU without background: 0.902732
+2021-08-15 03:15:34,592 - Model - INFO - eval point accuracy without background: 0.977349
+2021-08-15 03:15:34,592 - Model - INFO - eval point avg class acc without background: 0.970115
+2021-08-15 03:15:34,592 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.938 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.708 
+
+2021-08-15 03:15:34,592 - Model - INFO - Eval mean loss: 0.032774
+2021-08-15 03:15:34,592 - Model - INFO - Eval accuracy: 0.993608
+2021-08-15 03:15:34,593 - Model - INFO - Save model...
+2021-08-15 03:15:34,593 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-15 03:15:34,645 - Model - INFO - Saving model....
+2021-08-15 03:15:34,645 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 03:15:34,646 - Model - INFO - **** Epoch 73 (73/100) ****
+2021-08-15 03:15:34,646 - Model - INFO - Learning rate:0.000082
+2021-08-15 03:31:22,777 - Model - INFO - Training mean loss: 0.028658
+2021-08-15 03:31:22,778 - Model - INFO - Training accuracy: 0.994063
+2021-08-15 03:31:23,329 - Model - INFO - ---- EPOCH 073 EVALUATION ----
+2021-08-15 03:36:13,334 - Model - INFO - eval mean loss: 0.033446
+2021-08-15 03:36:13,335 - Model - INFO - eval point avg class IoU: 0.914897
+2021-08-15 03:36:13,335 - Model - INFO - eval point accuracy: 0.993286
+2021-08-15 03:36:13,335 - Model - INFO - eval point avg class acc: 0.974824
+2021-08-15 03:36:13,336 - Model - INFO - eval point avg class IoU without background: 0.898332
+2021-08-15 03:36:13,336 - Model - INFO - eval point accuracy without background: 0.976233
+2021-08-15 03:36:13,336 - Model - INFO - eval point avg class acc without background: 0.970115
+2021-08-15 03:36:13,336 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.927 
+class charger        weight: 0.012, IoU: 0.941 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.686 
+
+2021-08-15 03:36:13,337 - Model - INFO - Eval mean loss: 0.033446
+2021-08-15 03:36:13,337 - Model - INFO - Eval accuracy: 0.993286
+2021-08-15 03:36:13,337 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 03:36:13,339 - Model - INFO - **** Epoch 74 (74/100) ****
+2021-08-15 03:36:13,340 - Model - INFO - Learning rate:0.000082
+2021-08-15 03:52:10,368 - Model - INFO - Training mean loss: 0.028709
+2021-08-15 03:52:10,369 - Model - INFO - Training accuracy: 0.994063
+2021-08-15 03:52:10,883 - Model - INFO - ---- EPOCH 074 EVALUATION ----
+2021-08-15 03:56:58,039 - Model - INFO - eval mean loss: 0.034458
+2021-08-15 03:56:58,040 - Model - INFO - eval point avg class IoU: 0.913463
+2021-08-15 03:56:58,040 - Model - INFO - eval point accuracy: 0.993133
+2021-08-15 03:56:58,040 - Model - INFO - eval point avg class acc: 0.974645
+2021-08-15 03:56:58,040 - Model - INFO - eval point avg class IoU without background: 0.896617
+2021-08-15 03:56:58,041 - Model - INFO - eval point accuracy without background: 0.975854
+2021-08-15 03:56:58,041 - Model - INFO - eval point avg class acc without background: 0.969917
+2021-08-15 03:56:58,041 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.927 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.680 
+
+2021-08-15 03:56:58,041 - Model - INFO - Eval mean loss: 0.034458
+2021-08-15 03:56:58,042 - Model - INFO - Eval accuracy: 0.993133
+2021-08-15 03:56:58,042 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 03:56:58,043 - Model - INFO - **** Epoch 75 (75/100) ****
+2021-08-15 03:56:58,044 - Model - INFO - Learning rate:0.000082
+2021-08-15 04:12:45,202 - Model - INFO - Training mean loss: 0.028550
+2021-08-15 04:12:45,203 - Model - INFO - Training accuracy: 0.994086
+2021-08-15 04:12:45,728 - Model - INFO - ---- EPOCH 075 EVALUATION ----
+2021-08-15 04:17:34,003 - Model - INFO - eval mean loss: 0.033074
+2021-08-15 04:17:34,004 - Model - INFO - eval point avg class IoU: 0.914936
+2021-08-15 04:17:34,004 - Model - INFO - eval point accuracy: 0.993334
+2021-08-15 04:17:34,004 - Model - INFO - eval point avg class acc: 0.975091
+2021-08-15 04:17:34,004 - Model - INFO - eval point avg class IoU without background: 0.898347
+2021-08-15 04:17:34,004 - Model - INFO - eval point accuracy without background: 0.975657
+2021-08-15 04:17:34,005 - Model - INFO - eval point avg class acc without background: 0.970389
+2021-08-15 04:17:34,005 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.942 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.687 
+
+2021-08-15 04:17:34,005 - Model - INFO - Eval mean loss: 0.033074
+2021-08-15 04:17:34,005 - Model - INFO - Eval accuracy: 0.993334
+2021-08-15 04:17:34,006 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 04:17:34,006 - Model - INFO - **** Epoch 76 (76/100) ****
+2021-08-15 04:17:34,007 - Model - INFO - Learning rate:0.000082
+2021-08-15 04:33:17,121 - Model - INFO - Training mean loss: 0.028608
+2021-08-15 04:33:17,122 - Model - INFO - Training accuracy: 0.994063
+2021-08-15 04:33:17,123 - Model - INFO - Save model...
+2021-08-15 04:33:17,124 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 04:33:17,179 - Model - INFO - Saving model....
+2021-08-15 04:33:17,703 - Model - INFO - ---- EPOCH 076 EVALUATION ----
+2021-08-15 04:38:14,776 - Model - INFO - eval mean loss: 0.033178
+2021-08-15 04:38:14,776 - Model - INFO - eval point avg class IoU: 0.914004
+2021-08-15 04:38:14,776 - Model - INFO - eval point accuracy: 0.993229
+2021-08-15 04:38:14,777 - Model - INFO - eval point avg class acc: 0.975814
+2021-08-15 04:38:14,777 - Model - INFO - eval point avg class IoU without background: 0.897251
+2021-08-15 04:38:14,777 - Model - INFO - eval point accuracy without background: 0.976039
+2021-08-15 04:38:14,777 - Model - INFO - eval point avg class acc without background: 0.971307
+2021-08-15 04:38:14,777 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.927 
+class charger        weight: 0.012, IoU: 0.939 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.683 
+
+2021-08-15 04:38:14,778 - Model - INFO - Eval mean loss: 0.033178
+2021-08-15 04:38:14,778 - Model - INFO - Eval accuracy: 0.993229
+2021-08-15 04:38:14,778 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 04:38:14,780 - Model - INFO - **** Epoch 77 (77/100) ****
+2021-08-15 04:38:14,780 - Model - INFO - Learning rate:0.000082
+2021-08-15 04:53:53,790 - Model - INFO - Training mean loss: 0.028503
+2021-08-15 04:53:53,791 - Model - INFO - Training accuracy: 0.994096
+2021-08-15 04:53:54,327 - Model - INFO - ---- EPOCH 077 EVALUATION ----
+2021-08-15 04:58:40,220 - Model - INFO - eval mean loss: 0.033760
+2021-08-15 04:58:40,220 - Model - INFO - eval point avg class IoU: 0.915025
+2021-08-15 04:58:40,220 - Model - INFO - eval point accuracy: 0.993330
+2021-08-15 04:58:40,220 - Model - INFO - eval point avg class acc: 0.974937
+2021-08-15 04:58:40,220 - Model - INFO - eval point avg class IoU without background: 0.898462
+2021-08-15 04:58:40,220 - Model - INFO - eval point accuracy without background: 0.976210
+2021-08-15 04:58:40,220 - Model - INFO - eval point avg class acc without background: 0.970238
+2021-08-15 04:58:40,221 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.924 
+class charger        weight: 0.012, IoU: 0.938 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.693 
+
+2021-08-15 04:58:40,221 - Model - INFO - Eval mean loss: 0.033760
+2021-08-15 04:58:40,221 - Model - INFO - Eval accuracy: 0.993330
+2021-08-15 04:58:40,221 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 04:58:40,221 - Model - INFO - **** Epoch 78 (78/100) ****
+2021-08-15 04:58:40,222 - Model - INFO - Learning rate:0.000082
+2021-08-15 05:14:24,522 - Model - INFO - Training mean loss: 0.028603
+2021-08-15 05:14:24,523 - Model - INFO - Training accuracy: 0.994066
+2021-08-15 05:14:25,142 - Model - INFO - ---- EPOCH 078 EVALUATION ----
+2021-08-15 05:19:10,219 - Model - INFO - eval mean loss: 0.034410
+2021-08-15 05:19:10,220 - Model - INFO - eval point avg class IoU: 0.916469
+2021-08-15 05:19:10,220 - Model - INFO - eval point accuracy: 0.993398
+2021-08-15 05:19:10,220 - Model - INFO - eval point avg class acc: 0.973070
+2021-08-15 05:19:10,220 - Model - INFO - eval point avg class IoU without background: 0.900207
+2021-08-15 05:19:10,220 - Model - INFO - eval point accuracy without background: 0.976555
+2021-08-15 05:19:10,221 - Model - INFO - eval point avg class acc without background: 0.968001
+2021-08-15 05:19:10,221 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.924 
+class charger        weight: 0.012, IoU: 0.942 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.695 
+
+2021-08-15 05:19:10,221 - Model - INFO - Eval mean loss: 0.034410
+2021-08-15 05:19:10,221 - Model - INFO - Eval accuracy: 0.993398
+2021-08-15 05:19:10,222 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 05:19:10,223 - Model - INFO - **** Epoch 79 (79/100) ****
+2021-08-15 05:19:10,223 - Model - INFO - Learning rate:0.000082
+2021-08-15 05:34:59,729 - Model - INFO - Training mean loss: 0.028587
+2021-08-15 05:34:59,729 - Model - INFO - Training accuracy: 0.994080
+2021-08-15 05:35:00,286 - Model - INFO - ---- EPOCH 079 EVALUATION ----
+2021-08-15 05:39:47,135 - Model - INFO - eval mean loss: 0.035382
+2021-08-15 05:39:47,135 - Model - INFO - eval point avg class IoU: 0.906171
+2021-08-15 05:39:47,135 - Model - INFO - eval point accuracy: 0.992539
+2021-08-15 05:39:47,136 - Model - INFO - eval point avg class acc: 0.974729
+2021-08-15 05:39:47,136 - Model - INFO - eval point avg class IoU without background: 0.887854
+2021-08-15 05:39:47,136 - Model - INFO - eval point accuracy without background: 0.972874
+2021-08-15 05:39:47,136 - Model - INFO - eval point avg class acc without background: 0.969994
+2021-08-15 05:39:47,136 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.966 
+class gearContainer  weight: 0.038, IoU: 0.919 
+class charger        weight: 0.012, IoU: 0.938 
+class bottom         weight: 0.045, IoU: 0.965 
+class bolt           weight: 0.006, IoU: 0.650 
+
+2021-08-15 05:39:47,137 - Model - INFO - Eval mean loss: 0.035382
+2021-08-15 05:39:47,137 - Model - INFO - Eval accuracy: 0.992539
+2021-08-15 05:39:47,137 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 05:39:47,139 - Model - INFO - **** Epoch 80 (80/100) ****
+2021-08-15 05:39:47,140 - Model - INFO - Learning rate:0.000082
+2021-08-15 05:55:31,376 - Model - INFO - Training mean loss: 0.028496
+2021-08-15 05:55:31,377 - Model - INFO - Training accuracy: 0.994095
+2021-08-15 05:55:31,939 - Model - INFO - ---- EPOCH 080 EVALUATION ----
+2021-08-15 06:00:18,152 - Model - INFO - eval mean loss: 0.033668
+2021-08-15 06:00:18,152 - Model - INFO - eval point avg class IoU: 0.916671
+2021-08-15 06:00:18,152 - Model - INFO - eval point accuracy: 0.993420
+2021-08-15 06:00:18,153 - Model - INFO - eval point avg class acc: 0.974909
+2021-08-15 06:00:18,153 - Model - INFO - eval point avg class IoU without background: 0.900450
+2021-08-15 06:00:18,153 - Model - INFO - eval point accuracy without background: 0.976553
+2021-08-15 06:00:18,153 - Model - INFO - eval point avg class acc without background: 0.970201
+2021-08-15 06:00:18,153 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.926 
+class charger        weight: 0.012, IoU: 0.936 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.701 
+
+2021-08-15 06:00:18,154 - Model - INFO - Eval mean loss: 0.033668
+2021-08-15 06:00:18,154 - Model - INFO - Eval accuracy: 0.993420
+2021-08-15 06:00:18,154 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 06:00:18,155 - Model - INFO - **** Epoch 81 (81/100) ****
+2021-08-15 06:00:18,156 - Model - INFO - Learning rate:0.000058
+2021-08-15 06:16:09,659 - Model - INFO - Training mean loss: 0.027987
+2021-08-15 06:16:09,659 - Model - INFO - Training accuracy: 0.994191
+2021-08-15 06:16:09,660 - Model - INFO - Save model...
+2021-08-15 06:16:09,661 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 06:16:09,714 - Model - INFO - Saving model....
+2021-08-15 06:16:10,207 - Model - INFO - ---- EPOCH 081 EVALUATION ----
+2021-08-15 06:20:55,550 - Model - INFO - eval mean loss: 0.032489
+2021-08-15 06:20:55,551 - Model - INFO - eval point avg class IoU: 0.917690
+2021-08-15 06:20:55,551 - Model - INFO - eval point accuracy: 0.993456
+2021-08-15 06:20:55,551 - Model - INFO - eval point avg class acc: 0.975060
+2021-08-15 06:20:55,551 - Model - INFO - eval point avg class IoU without background: 0.901682
+2021-08-15 06:20:55,551 - Model - INFO - eval point accuracy without background: 0.977362
+2021-08-15 06:20:55,551 - Model - INFO - eval point avg class acc without background: 0.970421
+2021-08-15 06:20:55,551 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.930 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.695 
+
+2021-08-15 06:20:55,551 - Model - INFO - Eval mean loss: 0.032489
+2021-08-15 06:20:55,551 - Model - INFO - Eval accuracy: 0.993456
+2021-08-15 06:20:55,551 - Model - INFO - Best mIoU: 0.918583
+2021-08-15 06:20:55,552 - Model - INFO - **** Epoch 82 (82/100) ****
+2021-08-15 06:20:55,552 - Model - INFO - Learning rate:0.000058
+2021-08-15 06:36:39,330 - Model - INFO - Training mean loss: 0.027909
+2021-08-15 06:36:39,331 - Model - INFO - Training accuracy: 0.994207
+2021-08-15 06:36:39,879 - Model - INFO - ---- EPOCH 082 EVALUATION ----
+2021-08-15 06:41:27,364 - Model - INFO - eval mean loss: 0.033616
+2021-08-15 06:41:27,365 - Model - INFO - eval point avg class IoU: 0.920933
+2021-08-15 06:41:27,365 - Model - INFO - eval point accuracy: 0.993742
+2021-08-15 06:41:27,365 - Model - INFO - eval point avg class acc: 0.973238
+2021-08-15 06:41:27,366 - Model - INFO - eval point avg class IoU without background: 0.905562
+2021-08-15 06:41:27,366 - Model - INFO - eval point accuracy without background: 0.978449
+2021-08-15 06:41:27,366 - Model - INFO - eval point avg class acc without background: 0.968227
+2021-08-15 06:41:27,367 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.973 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.714 
+
+2021-08-15 06:41:27,367 - Model - INFO - Eval mean loss: 0.033616
+2021-08-15 06:41:27,367 - Model - INFO - Eval accuracy: 0.993742
+2021-08-15 06:41:27,367 - Model - INFO - Save model...
+2021-08-15 06:41:27,367 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-15 06:41:27,417 - Model - INFO - Saving model....
+2021-08-15 06:41:27,417 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 06:41:27,418 - Model - INFO - **** Epoch 83 (83/100) ****
+2021-08-15 06:41:27,418 - Model - INFO - Learning rate:0.000058
+2021-08-15 06:57:14,912 - Model - INFO - Training mean loss: 0.027939
+2021-08-15 06:57:14,912 - Model - INFO - Training accuracy: 0.994208
+2021-08-15 06:57:15,475 - Model - INFO - ---- EPOCH 083 EVALUATION ----
+2021-08-15 07:02:04,419 - Model - INFO - eval mean loss: 0.032318
+2021-08-15 07:02:04,419 - Model - INFO - eval point avg class IoU: 0.915045
+2021-08-15 07:02:04,419 - Model - INFO - eval point accuracy: 0.993325
+2021-08-15 07:02:04,420 - Model - INFO - eval point avg class acc: 0.976377
+2021-08-15 07:02:04,420 - Model - INFO - eval point avg class IoU without background: 0.898494
+2021-08-15 07:02:04,420 - Model - INFO - eval point accuracy without background: 0.976320
+2021-08-15 07:02:04,420 - Model - INFO - eval point avg class acc without background: 0.971975
+2021-08-15 07:02:04,420 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.771, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.685 
+
+2021-08-15 07:02:04,420 - Model - INFO - Eval mean loss: 0.032318
+2021-08-15 07:02:04,420 - Model - INFO - Eval accuracy: 0.993325
+2021-08-15 07:02:04,420 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 07:02:04,421 - Model - INFO - **** Epoch 84 (84/100) ****
+2021-08-15 07:02:04,421 - Model - INFO - Learning rate:0.000058
+2021-08-15 07:17:48,564 - Model - INFO - Training mean loss: 0.027741
+2021-08-15 07:17:48,564 - Model - INFO - Training accuracy: 0.994234
+2021-08-15 07:17:49,125 - Model - INFO - ---- EPOCH 084 EVALUATION ----
+2021-08-15 07:22:35,989 - Model - INFO - eval mean loss: 0.033774
+2021-08-15 07:22:35,989 - Model - INFO - eval point avg class IoU: 0.915645
+2021-08-15 07:22:35,989 - Model - INFO - eval point accuracy: 0.993359
+2021-08-15 07:22:35,990 - Model - INFO - eval point avg class acc: 0.974977
+2021-08-15 07:22:35,990 - Model - INFO - eval point avg class IoU without background: 0.899217
+2021-08-15 07:22:35,990 - Model - INFO - eval point accuracy without background: 0.976589
+2021-08-15 07:22:35,990 - Model - INFO - eval point avg class acc without background: 0.970301
+2021-08-15 07:22:35,991 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.691 
+
+2021-08-15 07:22:35,991 - Model - INFO - Eval mean loss: 0.033774
+2021-08-15 07:22:35,991 - Model - INFO - Eval accuracy: 0.993359
+2021-08-15 07:22:35,991 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 07:22:35,992 - Model - INFO - **** Epoch 85 (85/100) ****
+2021-08-15 07:22:35,993 - Model - INFO - Learning rate:0.000058
+2021-08-15 07:38:16,167 - Model - INFO - Training mean loss: 0.027693
+2021-08-15 07:38:16,168 - Model - INFO - Training accuracy: 0.994247
+2021-08-15 07:38:16,718 - Model - INFO - ---- EPOCH 085 EVALUATION ----
+2021-08-15 07:43:05,118 - Model - INFO - eval mean loss: 0.033470
+2021-08-15 07:43:05,118 - Model - INFO - eval point avg class IoU: 0.919509
+2021-08-15 07:43:05,118 - Model - INFO - eval point accuracy: 0.993621
+2021-08-15 07:43:05,119 - Model - INFO - eval point avg class acc: 0.974203
+2021-08-15 07:43:05,119 - Model - INFO - eval point avg class IoU without background: 0.903855
+2021-08-15 07:43:05,119 - Model - INFO - eval point accuracy without background: 0.977499
+2021-08-15 07:43:05,119 - Model - INFO - eval point avg class acc without background: 0.969359
+2021-08-15 07:43:05,120 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.930 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.705 
+
+2021-08-15 07:43:05,120 - Model - INFO - Eval mean loss: 0.033470
+2021-08-15 07:43:05,120 - Model - INFO - Eval accuracy: 0.993621
+2021-08-15 07:43:05,120 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 07:43:05,121 - Model - INFO - **** Epoch 86 (86/100) ****
+2021-08-15 07:43:05,122 - Model - INFO - Learning rate:0.000058
+2021-08-15 07:58:09,703 - Model - INFO - Training mean loss: 0.027916
+2021-08-15 07:58:09,704 - Model - INFO - Training accuracy: 0.994208
+2021-08-15 07:58:09,705 - Model - INFO - Save model...
+2021-08-15 07:58:09,705 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 07:58:09,755 - Model - INFO - Saving model....
+2021-08-15 07:58:10,277 - Model - INFO - ---- EPOCH 086 EVALUATION ----
+2021-08-15 08:02:38,026 - Model - INFO - eval mean loss: 0.033873
+2021-08-15 08:02:38,026 - Model - INFO - eval point avg class IoU: 0.916282
+2021-08-15 08:02:38,027 - Model - INFO - eval point accuracy: 0.993433
+2021-08-15 08:02:38,027 - Model - INFO - eval point avg class acc: 0.973791
+2021-08-15 08:02:38,027 - Model - INFO - eval point avg class IoU without background: 0.899976
+2021-08-15 08:02:38,027 - Model - INFO - eval point accuracy without background: 0.976836
+2021-08-15 08:02:38,027 - Model - INFO - eval point avg class acc without background: 0.968874
+2021-08-15 08:02:38,028 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.925 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.695 
+
+2021-08-15 08:02:38,028 - Model - INFO - Eval mean loss: 0.033873
+2021-08-15 08:02:38,028 - Model - INFO - Eval accuracy: 0.993433
+2021-08-15 08:02:38,028 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 08:02:38,029 - Model - INFO - **** Epoch 87 (87/100) ****
+2021-08-15 08:02:38,030 - Model - INFO - Learning rate:0.000058
+2021-08-15 08:17:22,658 - Model - INFO - Training mean loss: 0.027793
+2021-08-15 08:17:22,659 - Model - INFO - Training accuracy: 0.994228
+2021-08-15 08:17:23,164 - Model - INFO - ---- EPOCH 087 EVALUATION ----
+2021-08-15 08:21:53,811 - Model - INFO - eval mean loss: 0.033068
+2021-08-15 08:21:53,812 - Model - INFO - eval point avg class IoU: 0.913163
+2021-08-15 08:21:53,812 - Model - INFO - eval point accuracy: 0.993167
+2021-08-15 08:21:53,812 - Model - INFO - eval point avg class acc: 0.976022
+2021-08-15 08:21:53,812 - Model - INFO - eval point avg class IoU without background: 0.896250
+2021-08-15 08:21:53,812 - Model - INFO - eval point accuracy without background: 0.976194
+2021-08-15 08:21:53,813 - Model - INFO - eval point avg class acc without background: 0.971581
+2021-08-15 08:21:53,813 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.969 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.676 
+
+2021-08-15 08:21:53,813 - Model - INFO - Eval mean loss: 0.033068
+2021-08-15 08:21:53,813 - Model - INFO - Eval accuracy: 0.993167
+2021-08-15 08:21:53,813 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 08:21:53,814 - Model - INFO - **** Epoch 88 (88/100) ****
+2021-08-15 08:21:53,815 - Model - INFO - Learning rate:0.000058
+2021-08-15 08:36:36,418 - Model - INFO - Training mean loss: 0.027692
+2021-08-15 08:36:36,419 - Model - INFO - Training accuracy: 0.994251
+2021-08-15 08:36:36,928 - Model - INFO - ---- EPOCH 088 EVALUATION ----
+2021-08-15 08:41:04,739 - Model - INFO - eval mean loss: 0.033368
+2021-08-15 08:41:04,739 - Model - INFO - eval point avg class IoU: 0.916848
+2021-08-15 08:41:04,739 - Model - INFO - eval point accuracy: 0.993419
+2021-08-15 08:41:04,740 - Model - INFO - eval point avg class acc: 0.975516
+2021-08-15 08:41:04,740 - Model - INFO - eval point avg class IoU without background: 0.900652
+2021-08-15 08:41:04,740 - Model - INFO - eval point accuracy without background: 0.976772
+2021-08-15 08:41:04,740 - Model - INFO - eval point avg class acc without background: 0.970942
+2021-08-15 08:41:04,740 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.970 
+class gearContainer  weight: 0.038, IoU: 0.927 
+class charger        weight: 0.012, IoU: 0.940 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.697 
+
+2021-08-15 08:41:04,741 - Model - INFO - Eval mean loss: 0.033368
+2021-08-15 08:41:04,741 - Model - INFO - Eval accuracy: 0.993419
+2021-08-15 08:41:04,741 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 08:41:04,742 - Model - INFO - **** Epoch 89 (89/100) ****
+2021-08-15 08:41:04,742 - Model - INFO - Learning rate:0.000058
+2021-08-15 08:55:51,603 - Model - INFO - Training mean loss: 0.027816
+2021-08-15 08:55:51,604 - Model - INFO - Training accuracy: 0.994223
+2021-08-15 08:55:52,124 - Model - INFO - ---- EPOCH 089 EVALUATION ----
+2021-08-15 09:00:19,651 - Model - INFO - eval mean loss: 0.032867
+2021-08-15 09:00:19,652 - Model - INFO - eval point avg class IoU: 0.918800
+2021-08-15 09:00:19,652 - Model - INFO - eval point accuracy: 0.993557
+2021-08-15 09:00:19,652 - Model - INFO - eval point avg class acc: 0.974851
+2021-08-15 09:00:19,653 - Model - INFO - eval point avg class IoU without background: 0.903019
+2021-08-15 09:00:19,653 - Model - INFO - eval point accuracy without background: 0.977964
+2021-08-15 09:00:19,653 - Model - INFO - eval point avg class acc without background: 0.970180
+2021-08-15 09:00:19,653 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.929 
+class charger        weight: 0.012, IoU: 0.943 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.703 
+
+2021-08-15 09:00:19,654 - Model - INFO - Eval mean loss: 0.032867
+2021-08-15 09:00:19,654 - Model - INFO - Eval accuracy: 0.993557
+2021-08-15 09:00:19,654 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 09:00:19,655 - Model - INFO - **** Epoch 90 (90/100) ****
+2021-08-15 09:00:19,656 - Model - INFO - Learning rate:0.000058
+2021-08-15 09:15:11,192 - Model - INFO - Training mean loss: 0.027748
+2021-08-15 09:15:11,192 - Model - INFO - Training accuracy: 0.994247
+2021-08-15 09:15:11,728 - Model - INFO - ---- EPOCH 090 EVALUATION ----
+2021-08-15 09:19:38,844 - Model - INFO - eval mean loss: 0.032825
+2021-08-15 09:19:38,845 - Model - INFO - eval point avg class IoU: 0.916766
+2021-08-15 09:19:38,845 - Model - INFO - eval point accuracy: 0.993388
+2021-08-15 09:19:38,845 - Model - INFO - eval point avg class acc: 0.976332
+2021-08-15 09:19:38,846 - Model - INFO - eval point avg class IoU without background: 0.900579
+2021-08-15 09:19:38,846 - Model - INFO - eval point accuracy without background: 0.977297
+2021-08-15 09:19:38,846 - Model - INFO - eval point avg class acc without background: 0.971961
+2021-08-15 09:19:38,846 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.928 
+class charger        weight: 0.012, IoU: 0.937 
+class bottom         weight: 0.045, IoU: 0.967 
+class bolt           weight: 0.006, IoU: 0.700 
+
+2021-08-15 09:19:38,847 - Model - INFO - Eval mean loss: 0.032825
+2021-08-15 09:19:38,847 - Model - INFO - Eval accuracy: 0.993388
+2021-08-15 09:19:38,847 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 09:19:38,848 - Model - INFO - **** Epoch 91 (91/100) ****
+2021-08-15 09:19:38,849 - Model - INFO - Learning rate:0.000040
+2021-08-15 09:34:28,605 - Model - INFO - Training mean loss: 0.027288
+2021-08-15 09:34:28,605 - Model - INFO - Training accuracy: 0.994323
+2021-08-15 09:34:28,606 - Model - INFO - Save model...
+2021-08-15 09:34:28,606 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 09:34:28,663 - Model - INFO - Saving model....
+2021-08-15 09:34:29,179 - Model - INFO - ---- EPOCH 091 EVALUATION ----
+2021-08-15 09:38:54,257 - Model - INFO - eval mean loss: 0.032217
+2021-08-15 09:38:54,257 - Model - INFO - eval point avg class IoU: 0.918658
+2021-08-15 09:38:54,257 - Model - INFO - eval point accuracy: 0.993589
+2021-08-15 09:38:54,257 - Model - INFO - eval point avg class acc: 0.976047
+2021-08-15 09:38:54,258 - Model - INFO - eval point avg class IoU without background: 0.902828
+2021-08-15 09:38:54,258 - Model - INFO - eval point accuracy without background: 0.977674
+2021-08-15 09:38:54,258 - Model - INFO - eval point avg class acc without background: 0.971590
+2021-08-15 09:38:54,258 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.929 
+class charger        weight: 0.012, IoU: 0.942 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.703 
+
+2021-08-15 09:38:54,259 - Model - INFO - Eval mean loss: 0.032217
+2021-08-15 09:38:54,259 - Model - INFO - Eval accuracy: 0.993589
+2021-08-15 09:38:54,259 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 09:38:54,260 - Model - INFO - **** Epoch 92 (92/100) ****
+2021-08-15 09:38:54,260 - Model - INFO - Learning rate:0.000040
+2021-08-15 09:53:32,159 - Model - INFO - Training mean loss: 0.027254
+2021-08-15 09:53:32,160 - Model - INFO - Training accuracy: 0.994333
+2021-08-15 09:53:32,748 - Model - INFO - ---- EPOCH 092 EVALUATION ----
+2021-08-15 09:58:01,086 - Model - INFO - eval mean loss: 0.032852
+2021-08-15 09:58:01,086 - Model - INFO - eval point avg class IoU: 0.919951
+2021-08-15 09:58:01,087 - Model - INFO - eval point accuracy: 0.993700
+2021-08-15 09:58:01,087 - Model - INFO - eval point avg class acc: 0.975003
+2021-08-15 09:58:01,087 - Model - INFO - eval point avg class IoU without background: 0.904370
+2021-08-15 09:58:01,087 - Model - INFO - eval point accuracy without background: 0.977709
+2021-08-15 09:58:01,087 - Model - INFO - eval point avg class acc without background: 0.970310
+2021-08-15 09:58:01,088 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.929 
+class charger        weight: 0.012, IoU: 0.943 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.708 
+
+2021-08-15 09:58:01,088 - Model - INFO - Eval mean loss: 0.032852
+2021-08-15 09:58:01,088 - Model - INFO - Eval accuracy: 0.993700
+2021-08-15 09:58:01,088 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 09:58:01,090 - Model - INFO - **** Epoch 93 (93/100) ****
+2021-08-15 09:58:01,090 - Model - INFO - Learning rate:0.000040
+2021-08-15 10:12:51,786 - Model - INFO - Training mean loss: 0.027220
+2021-08-15 10:12:51,786 - Model - INFO - Training accuracy: 0.994337
+2021-08-15 10:12:52,324 - Model - INFO - ---- EPOCH 093 EVALUATION ----
+2021-08-15 10:17:17,894 - Model - INFO - eval mean loss: 0.032873
+2021-08-15 10:17:17,895 - Model - INFO - eval point avg class IoU: 0.918717
+2021-08-15 10:17:17,895 - Model - INFO - eval point accuracy: 0.993622
+2021-08-15 10:17:17,895 - Model - INFO - eval point avg class acc: 0.975086
+2021-08-15 10:17:17,895 - Model - INFO - eval point avg class IoU without background: 0.902896
+2021-08-15 10:17:17,895 - Model - INFO - eval point accuracy without background: 0.977359
+2021-08-15 10:17:17,896 - Model - INFO - eval point avg class acc without background: 0.970410
+2021-08-15 10:17:17,896 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.931 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.698 
+
+2021-08-15 10:17:17,896 - Model - INFO - Eval mean loss: 0.032873
+2021-08-15 10:17:17,896 - Model - INFO - Eval accuracy: 0.993622
+2021-08-15 10:17:17,897 - Model - INFO - Best mIoU: 0.920933
+2021-08-15 10:17:17,898 - Model - INFO - **** Epoch 94 (94/100) ****
+2021-08-15 10:17:17,898 - Model - INFO - Learning rate:0.000040
+2021-08-15 10:32:02,361 - Model - INFO - Training mean loss: 0.027235
+2021-08-15 10:32:02,361 - Model - INFO - Training accuracy: 0.994334
+2021-08-15 10:32:02,872 - Model - INFO - ---- EPOCH 094 EVALUATION ----
+2021-08-15 10:36:30,329 - Model - INFO - eval mean loss: 0.032976
+2021-08-15 10:36:30,329 - Model - INFO - eval point avg class IoU: 0.921326
+2021-08-15 10:36:30,330 - Model - INFO - eval point accuracy: 0.993805
+2021-08-15 10:36:30,330 - Model - INFO - eval point avg class acc: 0.974440
+2021-08-15 10:36:30,330 - Model - INFO - eval point avg class IoU without background: 0.906026
+2021-08-15 10:36:30,330 - Model - INFO - eval point accuracy without background: 0.978482
+2021-08-15 10:36:30,330 - Model - INFO - eval point avg class acc without background: 0.969654
+2021-08-15 10:36:30,331 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.973 
+class gearContainer  weight: 0.038, IoU: 0.931 
+class charger        weight: 0.012, IoU: 0.945 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.713 
+
+2021-08-15 10:36:30,331 - Model - INFO - Eval mean loss: 0.032976
+2021-08-15 10:36:30,331 - Model - INFO - Eval accuracy: 0.993805
+2021-08-15 10:36:30,331 - Model - INFO - Save model...
+2021-08-15 10:36:30,331 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/best_model.pth
+2021-08-15 10:36:30,387 - Model - INFO - Saving model....
+2021-08-15 10:36:30,387 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 10:36:30,388 - Model - INFO - **** Epoch 95 (95/100) ****
+2021-08-15 10:36:30,388 - Model - INFO - Learning rate:0.000040
+2021-08-15 10:51:17,395 - Model - INFO - Training mean loss: 0.027255
+2021-08-15 10:51:17,395 - Model - INFO - Training accuracy: 0.994340
+2021-08-15 10:51:17,939 - Model - INFO - ---- EPOCH 095 EVALUATION ----
+2021-08-15 10:55:44,761 - Model - INFO - eval mean loss: 0.033477
+2021-08-15 10:55:44,761 - Model - INFO - eval point avg class IoU: 0.920080
+2021-08-15 10:55:44,762 - Model - INFO - eval point accuracy: 0.993692
+2021-08-15 10:55:44,762 - Model - INFO - eval point avg class acc: 0.973984
+2021-08-15 10:55:44,762 - Model - INFO - eval point avg class IoU without background: 0.904541
+2021-08-15 10:55:44,762 - Model - INFO - eval point accuracy without background: 0.978286
+2021-08-15 10:55:44,762 - Model - INFO - eval point avg class acc without background: 0.969124
+2021-08-15 10:55:44,763 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.931 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.707 
+
+2021-08-15 10:55:44,763 - Model - INFO - Eval mean loss: 0.033477
+2021-08-15 10:55:44,763 - Model - INFO - Eval accuracy: 0.993692
+2021-08-15 10:55:44,763 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 10:55:44,764 - Model - INFO - **** Epoch 96 (96/100) ****
+2021-08-15 10:55:44,765 - Model - INFO - Learning rate:0.000040
+2021-08-15 11:10:28,226 - Model - INFO - Training mean loss: 0.027160
+2021-08-15 11:10:28,226 - Model - INFO - Training accuracy: 0.994362
+2021-08-15 11:10:28,228 - Model - INFO - Save model...
+2021-08-15 11:10:28,228 - Model - INFO - Saving at log/sem_seg/pointnet2_sem_seg_0814/checkpoints/model.pth
+2021-08-15 11:10:28,305 - Model - INFO - Saving model....
+2021-08-15 11:10:28,834 - Model - INFO - ---- EPOCH 096 EVALUATION ----
+2021-08-15 11:14:56,194 - Model - INFO - eval mean loss: 0.032967
+2021-08-15 11:14:56,194 - Model - INFO - eval point avg class IoU: 0.917564
+2021-08-15 11:14:56,194 - Model - INFO - eval point accuracy: 0.993540
+2021-08-15 11:14:56,195 - Model - INFO - eval point avg class acc: 0.976019
+2021-08-15 11:14:56,195 - Model - INFO - eval point avg class IoU without background: 0.901523
+2021-08-15 11:14:56,195 - Model - INFO - eval point accuracy without background: 0.977750
+2021-08-15 11:14:56,195 - Model - INFO - eval point avg class acc without background: 0.971573
+2021-08-15 11:14:56,195 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.930 
+class charger        weight: 0.012, IoU: 0.941 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.696 
+
+2021-08-15 11:14:56,196 - Model - INFO - Eval mean loss: 0.032967
+2021-08-15 11:14:56,196 - Model - INFO - Eval accuracy: 0.993540
+2021-08-15 11:14:56,196 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 11:14:56,197 - Model - INFO - **** Epoch 97 (97/100) ****
+2021-08-15 11:14:56,198 - Model - INFO - Learning rate:0.000040
+2021-08-15 11:29:46,877 - Model - INFO - Training mean loss: 0.027148
+2021-08-15 11:29:46,878 - Model - INFO - Training accuracy: 0.994356
+2021-08-15 11:29:47,392 - Model - INFO - ---- EPOCH 097 EVALUATION ----
+2021-08-15 11:34:15,628 - Model - INFO - eval mean loss: 0.032740
+2021-08-15 11:34:15,628 - Model - INFO - eval point avg class IoU: 0.919427
+2021-08-15 11:34:15,629 - Model - INFO - eval point accuracy: 0.993683
+2021-08-15 11:34:15,629 - Model - INFO - eval point avg class acc: 0.975792
+2021-08-15 11:34:15,629 - Model - INFO - eval point avg class IoU without background: 0.903736
+2021-08-15 11:34:15,629 - Model - INFO - eval point accuracy without background: 0.977773
+2021-08-15 11:34:15,629 - Model - INFO - eval point avg class acc without background: 0.971265
+2021-08-15 11:34:15,630 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.972 
+class gearContainer  weight: 0.038, IoU: 0.930 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.703 
+
+2021-08-15 11:34:15,630 - Model - INFO - Eval mean loss: 0.032740
+2021-08-15 11:34:15,630 - Model - INFO - Eval accuracy: 0.993683
+2021-08-15 11:34:15,630 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 11:34:15,631 - Model - INFO - **** Epoch 98 (98/100) ****
+2021-08-15 11:34:15,632 - Model - INFO - Learning rate:0.000040
+2021-08-15 11:49:04,809 - Model - INFO - Training mean loss: 0.027116
+2021-08-15 11:49:04,809 - Model - INFO - Training accuracy: 0.994347
+2021-08-15 11:49:05,333 - Model - INFO - ---- EPOCH 098 EVALUATION ----
+2021-08-15 11:53:33,203 - Model - INFO - eval mean loss: 0.032671
+2021-08-15 11:53:33,203 - Model - INFO - eval point avg class IoU: 0.918052
+2021-08-15 11:53:33,203 - Model - INFO - eval point accuracy: 0.993566
+2021-08-15 11:53:33,204 - Model - INFO - eval point avg class acc: 0.976056
+2021-08-15 11:53:33,204 - Model - INFO - eval point avg class IoU without background: 0.902082
+2021-08-15 11:53:33,204 - Model - INFO - eval point accuracy without background: 0.977147
+2021-08-15 11:53:33,204 - Model - INFO - eval point avg class acc without background: 0.971574
+2021-08-15 11:53:33,204 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.929 
+class charger        weight: 0.012, IoU: 0.942 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.699 
+
+2021-08-15 11:53:33,205 - Model - INFO - Eval mean loss: 0.032671
+2021-08-15 11:53:33,205 - Model - INFO - Eval accuracy: 0.993566
+2021-08-15 11:53:33,205 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 11:53:33,206 - Model - INFO - **** Epoch 99 (99/100) ****
+2021-08-15 11:53:33,206 - Model - INFO - Learning rate:0.000040
+2021-08-15 12:08:14,021 - Model - INFO - Training mean loss: 0.027124
+2021-08-15 12:08:14,021 - Model - INFO - Training accuracy: 0.994351
+2021-08-15 12:08:14,537 - Model - INFO - ---- EPOCH 099 EVALUATION ----
+2021-08-15 12:12:41,635 - Model - INFO - eval mean loss: 0.033030
+2021-08-15 12:12:41,636 - Model - INFO - eval point avg class IoU: 0.918891
+2021-08-15 12:12:41,636 - Model - INFO - eval point accuracy: 0.993507
+2021-08-15 12:12:41,636 - Model - INFO - eval point avg class acc: 0.975314
+2021-08-15 12:12:41,636 - Model - INFO - eval point avg class IoU without background: 0.903138
+2021-08-15 12:12:41,637 - Model - INFO - eval point accuracy without background: 0.977986
+2021-08-15 12:12:41,637 - Model - INFO - eval point avg class acc without background: 0.970750
+2021-08-15 12:12:41,637 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.930 
+class charger        weight: 0.012, IoU: 0.944 
+class bottom         weight: 0.045, IoU: 0.968 
+class bolt           weight: 0.006, IoU: 0.702 
+
+2021-08-15 12:12:41,637 - Model - INFO - Eval mean loss: 0.033030
+2021-08-15 12:12:41,638 - Model - INFO - Eval accuracy: 0.993507
+2021-08-15 12:12:41,638 - Model - INFO - Best mIoU: 0.921326
+2021-08-15 12:12:41,639 - Model - INFO - **** Epoch 100 (100/100) ****
+2021-08-15 12:12:41,639 - Model - INFO - Learning rate:0.000040
+2021-08-15 12:27:27,837 - Model - INFO - Training mean loss: 0.027056
+2021-08-15 12:27:27,837 - Model - INFO - Training accuracy: 0.994372
+2021-08-15 12:27:28,356 - Model - INFO - ---- EPOCH 100 EVALUATION ----
+2021-08-15 12:31:56,852 - Model - INFO - eval mean loss: 0.033330
+2021-08-15 12:31:56,853 - Model - INFO - eval point avg class IoU: 0.917921
+2021-08-15 12:31:56,853 - Model - INFO - eval point accuracy: 0.993447
+2021-08-15 12:31:56,853 - Model - INFO - eval point avg class acc: 0.975413
+2021-08-15 12:31:56,853 - Model - INFO - eval point avg class IoU without background: 0.901967
+2021-08-15 12:31:56,854 - Model - INFO - eval point accuracy without background: 0.977497
+2021-08-15 12:31:56,854 - Model - INFO - eval point avg class acc without background: 0.970855
+2021-08-15 12:31:56,854 - Model - INFO - ------- IoU --------
+class clampingSystem weight: 0.770, IoU: 0.998 
+class cover          weight: 0.128, IoU: 0.971 
+class gearContainer  weight: 0.038, IoU: 0.927 
+class charger        weight: 0.012, IoU: 0.945 
+class bottom         weight: 0.045, IoU: 0.969 
+class bolt           weight: 0.006, IoU: 0.698 
+
+2021-08-15 12:31:56,854 - Model - INFO - Eval mean loss: 0.033330
+2021-08-15 12:31:56,855 - Model - INFO - Eval accuracy: 0.993447
+2021-08-15 12:31:56,855 - Model - INFO - Best mIoU: 0.921326
