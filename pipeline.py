@@ -17,7 +17,7 @@ def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Pipeline')
     parser.add_argument('--gpu', type=str, default='0', help='specify gpu device')
-    parser.add_argument('--log_dir', type=str, default='pointnet2_sem_seg_finetune', help='experiment root')
+    parser.add_argument('--log_dir', type=str, default='pointnet2_sem_seg_finetune', help='pretrained model root')
     parser.add_argument('--root', type=str, default=data_path + '/Test_set/', help='file need to be tested')
     parser.add_argument('--save_img', action='store_true', default=False, help='save the point cloud as image [default: False]')
     return parser.parse_args()
@@ -127,21 +127,33 @@ def main(args):
         
         '''find bolts'''
         bolt_locations, num_bolt = cut_ZividPCDandTransform.find_bolts(seg_motor, eps=2, min_points=50)
-        log_string('number of bolt from %s is: %d ' % (seg_result, num_bolt))
-        log_string('Each location of them based on Zivid-coordinate is: ------------------------------')
-        for bolt_location in bolt_locations:
-            log_string('({},{},{})'.format(bolt_location[0], bolt_location[1], bolt_location[2]))
-        # bolt_side_po_zivid = np.argmin(bolt_locations, axis = 0)[2]
-        # bolt_side_zivid = bolt_locations[bolt_side_po_zivid]
-
-        log_string('Each location of them based on Robot-coordinate is: ------------------------------')
-        min_Z = bolt_locations[0]
+        log_string('The number of bolt from %s is: %d ' % (seg_result, num_bolt))
+        log_string('The number of side bolt from %s is: 1. Its location in Robot-coordiante is: ' % (seg_result))
+        
+        bolt_locations_robot = []
+        min_Z_zivid = bolt_locations[0]
         for bolt_location in bolt_locations:
             bolt_location_robot= camera_to_base(transform_matrix, bolt_location[0:3])
-            log_string('({},{},{})'.format(bolt_location_robot[0], bolt_location_robot[1], bolt_location_robot[2]))
-            if bolt_location_robot[2] < min_Z[2]: min_Z = bolt_location_robot
+            bolt_locations_robot.append(bolt_location_robot)
+            if bolt_location[2] < min_Z_zivid[2]: min_Z_zivid = bolt_location
+        
+        min_Z_robot = bolt_locations_robot[0]
+        for bolt_l in bolt_locations_robot:
+            if bolt_l[2] < min_Z_robot[2]: min_Z_robot = bolt_l
 
-        log_string('The bolt on the side of motor based on Robot-coordinate is: ({},{},{})'.format(min_Z[0],min_Z[1],min_Z[2]))
+        log_string('                        ({}, {}, {})'.format(min_Z_robot[0],min_Z_robot[1],min_Z_robot[2]))
+        log_string('On Zivid koordinate is: ({}, {}, {})'.format(min_Z_zivid[0],min_Z_zivid[1],min_Z_zivid[2]))
+
+        log_string('The number of cover bolt from %s is: %d ' % (seg_result, num_bolt-1))
+        log_string('Each location of them based on Robot-coordinate is: ------------------------------')
+        for bolt_location_1 in bolt_locations_robot:
+            if bolt_location_1[0] != min_Z_robot[0] :
+                log_string('({}, {}, {})'.format(bolt_location_1[0], bolt_location_1[1], bolt_location_1[2]))
+        log_string('Each location of them based on Zivid-coordinate is: ------------------------------')
+        for bolt_location_2 in bolt_locations:
+            if bolt_location_2[0] != min_Z_zivid[0] :
+                log_string('({}, {}, {})'.format(bolt_location_2[0], bolt_location_2[1], bolt_location_2[2]))
+
 
         print('Start the insert process')
         '''insert process'''
@@ -154,6 +166,16 @@ def main(args):
                 cut_ZividPCDandTransform.save_pcd(final_result, mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult')
                 if args.save_img:
                     cut_ZividPCDandTransform.save_pcd_asIMG(mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.png')
+                filename_txt = os.path.join(mytimedir, res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.txt')
+                with open(filename_txt, 'w') as pl_save:
+                    for line in final_result:
+                        if line [3] == 0 and line[4] == 0 and line[5] == 255: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 0))
+                        elif line [3] == 0 and line[4] == 255 and line[5] == 0: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 1))
+                        elif line [3] == 0 and line[4] == 255 and line[5] == 255: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 2))
+                        elif line [3] == 255 and line[4] == 255 and line[5] == 0: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 3))
+                        elif line [3] == 255 and line[4] == 165 and line[5] == 0: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 4))
+                        elif line [3] == 255 and line[4] == 0 and line[5] == 0: pl_save.write('%f %f %f %d\n' % (line[0], line[1], line[2], 5))
+                    pl_save.close()
                 print("insert process of zivid data: %s -------------> number: %s is finished" %(res_scene_dir.split('Res_')[1],k))
 
         k += 1
