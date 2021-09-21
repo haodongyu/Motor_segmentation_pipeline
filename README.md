@@ -11,7 +11,7 @@ Motor_segmentation_pipeline (You can also place only one PCD file here.)
   │  ├─ TypeA1_1.pcd  
   │  ├─ TypeA1_5.pcd  
   │  ├─ ...  
-  |  └─ Scene5_1.pcd  
+  │  └─ Scene5_1.pcd  
   └─  
   
 ## Run
