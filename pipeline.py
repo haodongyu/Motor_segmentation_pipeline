@@ -163,9 +163,9 @@ def main(args):
                 res_scene[:, 3:] = [0,0,255]  # change the remaining scene color into blue
                 final_result = np.vstack([seg_motor, res_scene])
                # np.save(mytimedir + res_scene_dir.split('Res_')[1], final_result)
-                cut_ZividPCDandTransform.save_pcd(final_result, mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult')
+                cut_ZividPCDandTransform.points2pcd(mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.pcd', final_result)
                 if args.save_img:
-                    cut_ZividPCDandTransform.save_pcd_asIMG(mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.png')
+                    cut_ZividPCDandTransform.save_pcd_asIMG(final_result, mytimedir + res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.png')
                 filename_txt = os.path.join(mytimedir, res_scene_dir.split('Res_')[1].split('.npy')[0]+'_segResult.txt')
                 with open(filename_txt, 'w') as pl_save:
                     for line in final_result:
