@@ -230,7 +230,7 @@ def save_pcd_asIMG(pc ,FileName = None):
     ctr.rotate(-150.0, 0.0)
     vis.poll_events()
     vis.update_renderer()
-    vis.capture_screen_image(FileName)
+    vis.capture_screen_image(FileName, do_render=True)
     vis.destroy_window()
 
 
