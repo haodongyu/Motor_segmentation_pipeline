@@ -124,15 +124,37 @@ def Read_PCD(file_path):
     points = np.asarray(pcd.points)
     return np.concatenate([points, colors], axis=-1)
 
-def save_pcd(pc ,FileName = None):
+def open3d_save_pcd(pc ,FileName = None):
     sampled = np.asarray(pc)
     PointCloud_koordinate = sampled[:, 0:3]
 
     #visuell the point cloud
     point_cloud = o3d.geometry.PointCloud()
     point_cloud.points = o3d.utility.Vector3dVector(PointCloud_koordinate)
-    point_cloud.colors = o3d.utility.Vector3dVector(sampled[:, 3:])
-    o3d.io.write_point_cloud(FileName +'.pcd', point_cloud)
+    point_cloud.colors = o3d.utility.Vector3dVector(np.float64( sampled[:, 3:]))
+    o3d.io.write_point_cloud(FileName +'.pcd', point_cloud, write_ascii=True)
+
+def points2pcd(pcd_file_path, points):
+
+    handle = open(pcd_file_path, 'a')
+    
+    point_num=points.shape[0]
+
+    handle.write('# .PCD v0.7 - Point Cloud Data file format\nVERSION 0.7\nFIELDS x y z rgb\nSIZE 4 4 4 4\nTYPE F F F U\nCOUNT 1 1 1 1')
+    string = '\nWIDTH ' + str(point_num)
+    handle.write(string)
+    handle.write('\nHEIGHT 1\nVIEWPOINT 0 0 0 1 0 0 0')
+    string = '\nPOINTS ' + str(point_num)
+    handle.write(string)
+    handle.write('\nDATA ascii')
+
+   # int rgb = ((int)r << 16 | (int)g << 8 | (int)b); 
+    for i in range(point_num):
+        r,g,b = points[i,3], points[i,4], points[i,5]
+        rgb = int(r)<<16 | int(g)<<8 | int(b)
+        string = '\n' + str(points[i, 0]) + ' ' + str(points[i, 1]) + ' ' + str(points[i, 2]) + ' ' + str(rgb)
+        handle.write(string)
+    handle.close()
 
 def transform_patch(patch_motor, cam_to_robot_transform, Cam_inBlensor_position):
     new_cor = []
